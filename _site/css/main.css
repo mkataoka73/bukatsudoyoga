@@ -87,24 +87,116 @@ p {
   text-align: center;
 }
 
+/* MEMBERS STYLES */
+.members-wrapper {
+  border: 1px solid #aaa;
+}
+.member-box {
+  border: 1px solid #aaa;
+  width: 25%;
+  height: 50%;
+}
+.member-box img {
+  width: 150px;
+  height: 150px;
+}
+.members-box h4 {
+  text-align: center;
+}
+.member-box .member-copy {
+  text-align: center;
+}
+
 /* EVENTS STYLES */
 .events-wrapper {
   display: flex;
   flex-direction: row;
+  margin: 5px auto 3em;
+  max-width: 75%;
 }
 .event-box {
   border: 1px solid #aaa;
   flex: 1;
   margin: 1.2em 10px 3em;
+  max-width: 24vw;
   padding: 15px;
 }
 .event-box h4 {
-  font-size: 12px;
+  font-size: 0.8em;
   font-weight: bolder;
+  margin-top: 2.5em;
 }
 .event-box p {
   font-size: 0.8em;
   text-align: justify;
   width: 75%;
   margin: 0 auto 20px;
+}
+.event-image {
+  max-width: 30vw;
+  margin: auto;
+  height: 20vw;
+  width: 20vw;
+}
+.event-box img {
+  object-fit: cover;
+  width: 100%;
+  max-width: inherit;
+}
+
+@media (max-width: 800px) {
+  .events-wrapper {
+    flex-direction: column;
+  }
+  .event-box {
+    display: flex;
+    flex-direction: column;
+    max-width: none;
+    padding: 3px 3px;
+  }
+  .event-box .event-image {
+    /* border: 1px solid #009; */
+    height: 30vw;
+    max-width: none;
+    width: 90%;
+    overflow: hidden;
+  }
+  .event-box img {
+    flex: 1;
+    min-width: 20vw;
+    transform: translateY(-15%);
+  }
+  .event-box .event-text {
+    flex: 1;
+    transform: translateY(-5%);
+  }
+}
+@media (max-width: 500px) {
+  .events-wrapper {
+    flex-direction: column;
+    max-width: none;
+    padding: 0;
+  }
+  .event-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    max-width: none;
+  }
+  .event-box .event-image {
+    /* border: 1px solid #009; */
+    height: 45vw;
+    max-width: none;
+    width: 100%;
+    overflow: hidden;
+  }
+  .event-box img {
+    flex: 1;
+    min-width: 20vw;
+    transform: translateY(-15%);
+  }
+  .event-box .event-text {
+    flex: 1;
+    transform: translateY(-5%);
+  }
 }
