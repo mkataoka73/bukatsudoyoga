@@ -96,17 +96,19 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px 10px;
 }
 .member-box {
-  border: 1px solid #aaa;
   /* box-sizing: border-box; */
-  flex: 0 1 30%;
-  width: 30%;
+  border: 1px solid #aaa;
+  flex: 0 1 auto;
   height: 50%;
-  padding: 10px 0;
   margin-bottom: 10px;
+  max-width: 250px;
+  min-height: 250px;
+  padding: 10px;
+  width: 30%;
 }
 .member-box img {
   border-radius: 50%;
@@ -121,7 +123,7 @@ p {
   text-align: center;
   text-transform: uppercase;
 }
-.member-box .member-copy {
+.member-box p {
   text-align: center;
   font-size: 0.7em;
 }

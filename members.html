@@ -5,7 +5,16 @@ title: Members
 <div class="container members-container">
   <h1>在籍している人々</h1>
   <div class="members-wrapper">
-    <div class="member-box">
+
+    {% for member in site.members %}
+      <div class="member-box">
+        <img src="{{ member.image_path }}" alt="">
+        <h4>{{ member.title }}</h4>
+        <div class="member-copy">{{ member.content }}</div>
+      </div>
+    {% endfor %}
+
+    <!-- <div class="member-box">
       <img src="/images/prof_icon/forward_stretch.svg" alt="">
       <h4>name</h4>
       <p class="member-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
@@ -33,12 +42,7 @@ title: Members
     <div class="member-box">
       <img src="/images/prof_icon/forward_stretch.svg" alt="">
       <h4>name</h4>
-      <p class="member-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-    <div class="member-box">
-      <img src="/images/prof_icon/forward_stretch.svg" alt="">
-      <h4>name</h4>
-      <p class="member-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      <p class="member-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p> -->
     </div>
   </div>
 </div>
