@@ -5,44 +5,22 @@ title: Members
 <div class="container members-container">
   <h1>在籍している人々</h1>
   <div class="members-wrapper">
-
-    {% for member in site.members %}
+    {% assign members = (site.members | sort: 'number') %}
+    {% for member in members limit:9 %}
       <div class="member-box">
-        <img src="{{ member.image_path }}" alt="">
-        <h4>{{ member.title }}</h4>
-        <div class="member-copy">{{ member.content }}</div>
+        <img src="{{ member.image_path }}" alt="{{ member.name }}">
+        {% if member.instructor == 1 %}
+          <h4 class="instructor">{{ member.name }}</h4>
+        {% else %}
+          <h4>{{ member.name }}</h4>
+        {% endif %}
+        <div class="member-copy">
+          {{ member.content }}
+          Love: {{ member.love }}
+        </div>
       </div>
     {% endfor %}
 
-    <!-- <div class="member-box">
-      <img src="/images/prof_icon/forward_stretch.svg" alt="">
-      <h4>name</h4>
-      <p class="member-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
     </div>
-    <div class="member-box">
-      <img src="/images/prof_icon/forward_stretch.svg" alt="">
-      <h4>name</h4>
-      <p class="member-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-    <div class="member-box">
-      <img src="/images/prof_icon/forward_stretch.svg" alt="">
-      <h4>name</h4>
-      <p class="member-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-    <div class="member-box">
-      <img src="/images/prof_icon/forward_stretch.svg" alt="">
-      <h4>name</h4>
-      <p class="member-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-    <div class="member-box">
-      <img src="/images/prof_icon/forward_stretch.svg" alt="">
-      <h4>name</h4>
-      <p class="member-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-    <div class="member-box">
-      <img src="/images/prof_icon/forward_stretch.svg" alt="">
-      <h4>name</h4>
-      <p class="member-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p> -->
-    </div>
+    <p>...and more!</p>
   </div>
-</div>

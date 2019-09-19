@@ -1,6 +1,9 @@
 ---
-title: Ayumi
-image_path: /images/prof_icon/radio_stretch.svg
+name: Ayumi
+nickname: Ayu
+image_path: /images/prof_icon/stretch_forward.svg
+number: 2
+love: dancing
 ---
 
-Dancer and Instructor
+Lorem ipsum dolor sit amet, consectetur adipisicing elit
