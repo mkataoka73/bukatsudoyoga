@@ -5,7 +5,7 @@ title: Members
 <div class="container members-container">
   <h1>在籍している人々</h1>
   <div class="members-wrapper">
-    {% assign members = (site.members | sort: 'number') %}
+    {% assign members = site.members | sort: 'number' %}
     {% for member in members limit:9 %}
       <div class="member-box">
         <img src="{{ member.image_path }}" alt="{{ member.name }}">

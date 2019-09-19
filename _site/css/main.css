@@ -204,6 +204,19 @@ p {
   max-width: inherit;
 }
 
+ /* BLOG STYLES */
+ .posts-wrapper :first-child {
+   margin-top: 3em;
+ }
+ .blog-post ~ .blog-post {
+   margin-top: 6em;
+ }
+ .main-text {
+   margin: 0 auto 25px;
+   width: 75%;
+   text-align: center;
+ }
+
 @media (max-width: 800px) {
   .events-wrapper {
     flex-direction: column;
