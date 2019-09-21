@@ -1,11 +1,2 @@
 collections:
-  - members:
-    order:
-      - kanaco.md
-      - ayumi.md
-      - tera.md
-      - mizuno.md
-      - yukari.md
-      - sayuri.md
-      - isamu.md
-      - masayoshi.md
+  - members
