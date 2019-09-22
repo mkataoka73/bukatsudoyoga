@@ -2,20 +2,64 @@
 layout: default
 ---
 <div class="container home-container">
-  <div class="full-hero hero-home">
-    <div class="hero-content">
-      <h1 class="clb-name-jpn">ヨガ部</h1>
-      <h1 class="clb-name-eng">Bukatsudo yoga</h1>
+  <div class="home-section full-hero hero-home">
+    <div class="slider">
+      <div><img src="/images/photo/low_angle.jpg" alt=""></div>
+      <div><img src="/images/photo/blur.jpg" alt=""></div>
+      <div><img src="/images/photo/landmark_tower.jpg" alt=""></div>
+      <div><img src="/images/photo/bukatsudo_door.jpg" alt=""></div>
+      <div><img src="/images/photo/balance.jpg" alt=""></div>
+      <div><img src="/images/photo/stretch.jpg" alt=""></div>
+    </div>
+    <div class="site-title">
+      <h1 class="title-jpn">ヨガ部</h1>
+      <h1 class="title-eng">Bukatsudo yoga</h1>
+    </div>
+    <div class="dots"></div>
+  </div>
+
+  <div class="home-section home-text">
+    <div class="home-news">
+      <h2>News</h2>
+      <ul>
+        <li>横浜美術館前の広場でランタン・ヨガをやります</li>
+        <li>10/5 Wellness Yoga × 芝生喫茶</li>
+        <li>9/29 Wellness Yoga & Lunch 第2回</li>
+        <li>8/18 Wellness Yoga & Lunch 第1回</li>
+      </ul>
+    </div>
+    <div class="home-section about-club">
+      <h2>ヨガ部とは</h2>
+      <p>Bukatsudo ヨガ部は、横浜みなとみらい地区にあるランドマークタワーの近くで活動を行なっているヨガのサークルです。</p>
+      <p>毎月第2、第4水曜日の夜、ハタ・ヨガをベースに、インストラクターのkanacoが、日によって少しずつプログラムを変えながらやっています。</p>
+      <p>水曜日の夜に、ちょっと自分にいいことをしませんか？</p>
+    </div>
+    <div class="home-section about-bukatsudo">
+      <h2>Bukatsudo？</h2>
+      <p>BUKATSUDOは、横浜・みなとみらいの造船ドック跡地に誕生した、大人のためのシェアスペースです。未知の発見や、仲間との出会いから、趣味の集いや、街を豊かに変える活動が、はじまり、うごきだす。私たちはそのような、大人の日常を豊かにする活動をあらためて、愛をこめて「部活」と呼ぶことにしました。日常の楽しみ方は無限です。BUKATSUDOは、みなさんの自由な「部活」の拠点でありたいと考えています。</p>
+      <span class="caption">サイトより</span>
+    </div>
+    <div class="home-section message">
+      <p>
+        Find Your Wellness <br>
+        by Bukatsudo yoga bu
+      </p>
     </div>
   </div>
-  <div class="home-section club-story">
-    <p>Yoga bu is built in 2003 with initiate instructor Kanaco.</p>
-    <p>We aim to find <em>Wellness</em> in each one's daily life.</p>
-  </div>
-  <div class="home-section message">
-    <p>
-      Find Your Wellness <br>
-      by Bukatsudo yoga bu
-    </p>
-  </div>
 </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/slick.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.slider').slick({
+      appendDots: $('.dots'),
+      autoplay: true,
+      autoplaySpeed: 3000,
+      dots: true,
+      infinite: true,
+      speed: 2000,
+      slidesToShow: 1,
+      fade: true,
+    });
+  });
+</script>
