@@ -8,8 +8,8 @@ layout: default
       <div><img src="{{ "/images/photo/blur.jpg" | relative_url }}" alt=""></div>
       <div><img src="{{ "/images/photo/landmark_tower.jpg" | relative_url }}" alt=""></div>
       <div><img src="{{ "/images/photo/bukatsudo_door.jpg" | relative_url }}" alt=""></div>
-      <div><img src=" {{"/images/photo/balance.jpg" | relative_url }}" alt=""></div>
-      <div><img src=" {{"/images/photo/stretch.jpg" ~ relative_url }}" alt=""></div>
+      <div><img src=" {{ "/images/photo/balance.jpg" | relative_url }}" alt=""></div>
+      <div><img src=" {{ "/images/photo/stretch.jpg" | relative_url }}" alt=""></div>
     </div>
     <div class="site-title">
       <h1 class="title-jpn">ヨガ部</h1>
@@ -48,7 +48,7 @@ layout: default
   </div>
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="/js/slick.min.js"></script>
+<script src="{{ "/js/slick.min.js" | relative_url }}"></script>
 <script type="text/javascript">
   $(document).ready(function(){
     $('.slider').slick({
