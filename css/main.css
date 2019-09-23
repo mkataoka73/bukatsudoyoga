@@ -1,7 +1,7 @@
 /* FONT PRESET */
 @font-face {
   font-family: 'kokoro';
-  src: url(/fonts/kokoro/Kokoro.otf);
+  src: url({{ "/fonts/kokoro/Kokoro.otf" | relative_url }});
 }
 
 /* GLOBAL STYLES */
