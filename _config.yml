@@ -1,2 +1,9 @@
+title: ヨガ部 | Bukatsudo Yoga
+email:
+description: This site is a demo site created by a member of Bukatsudo Yoga club.
+
+baseurl: "/bukatsudoyoga"
+url: "https://jlmercury.github.io"
+
 collections:
   - members
