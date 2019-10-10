@@ -1,7 +1,7 @@
 /* FONT PRESET */
 @font-face {
   font-family: 'kokoro';
-  src: url({{ "/fonts/kokoro/Kokoro.otf" | relative_url }});
+  src: url( "{{ fonts/kokoro/Kokoro.otf | relative_url }}" ) format("opentype");
 }
 
 /* GLOBAL STYLES */
@@ -29,7 +29,7 @@ a {
 a:hover {
   text-decoration-color: rgba(99, 151, 181, 0.8);
 }
-p {
+p,li {
   font-size: 0.9rem;
 }
 
@@ -54,12 +54,28 @@ p {
   margin-right: 2.5em;
 }
 .nav-links a {
+  color: #000;
   text-decoration: none;
-  color: #000;;
-  transition: color 0.5s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 10px;
+  z-index: 0;
 }
-.nav-links a:hover {
-  color: #ff8133;
+.nav-links a:before {
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0px;
+  bottom: 0px;
+  content: '';
+  background: #2175cf;
+  opacity: 0.3;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+.nav-links a:hover:before {
+  color: #2175cf;
+  width: 100%;
 }
 .header-logo img {
 	height: 8vh;
@@ -102,26 +118,41 @@ p {
   transform: translate(-50%, -50%);
 }
 .site-title h1 {
-  color: #ff8133;
-  font-family: 'kokoro', sans-serif;
+  color: #a9d3de;
+  font-family: 'Noto Serif JP', serif;
   letter-spacing: 0.7em;
   margin: 0;
 }
-.title-jpn {
-  font-size: 8vw;
+.site-title .title-main {
+  font-weight: 200;
+  font-size: 7.5vw;
 }
-.title-eng {
-  font-size: 2.5vw;
+.site-title .title-sub {
+  color: #fff;
+  font-family: 'Amatic SC',cursive;
+  font-size: 3vw;
   transform: translateX(-4%);
 }
 .home-section {
   margin: 5px 0;
-  text-align: center;
+  text-align: left;
 }
 .home-text {
   width: 75%;
   max-width: 600px;
   margin: auto;
+}
+.home-text p {
+  font-size: 0.9em;
+}
+.home-news li {
+  list-style: none;
+  text-align: left;
+  line-height: 2;
+}
+.about-bukatsudo span {
+  display: block;
+  text-align: right;
 }
 
 /* FOOTER STYLES */
@@ -211,7 +242,7 @@ p {
   text-transform: capitalize;
 }
 .member-box .instructor::after {
-  color: lime;
+  color: #67a7b8;
   content: "★";
   font-size: 5px;
   margin-left: 3px;
