@@ -138,12 +138,23 @@ p,li {
   text-align: left;
 }
 .home-text {
+  font-family: 'M PLUS 1p', sans-serif;
   width: 75%;
   max-width: 600px;
   margin: auto;
 }
+.home-text .text-section ~ .text-section {
+  margin-top: 10vh;
+}
+.home-text h2 {
+  font-size:  1.2em;
+  letter-spacing: 0.2em;
+}
 .home-text p {
-  font-size: 0.9em;
+
+  font-size: 0.8em;
+  line-height: 1.8;
+  letter-spacing: 0.1em;
 }
 .home-news li {
   list-style: none;
