@@ -265,11 +265,19 @@ p,li {
 /* EVENTS STYLES */
 .events-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   margin: 5px auto 3em;
   padding: 0 5px;
   max-width: 80%;
+}
+.event-section {
+  display: flex;
+  flex-direction: column;
+}
+.box-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 .event-box {
   /* border: 1px solid #aaa; */
@@ -375,6 +383,10 @@ p,li {
     flex-direction: column;
     max-width: none;
     padding: 0;
+  }
+  .box-wrapper {
+    display: flex;
+    flex-direction: column;
   }
   .event-box {
     flex-direction: column;
