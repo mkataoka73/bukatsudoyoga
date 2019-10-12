@@ -1,9 +1,9 @@
 ---
 title: Sivananda yoga
 date: 2019-10-30
-time: 19:30〜20:45
 image_path: /images/photo/yoga_cliff.jpg
 type: yoga
+place: Bukatsudo
 ---
 毎月第2.4水曜日の夜に開催中のBukatsudo yoga部。
 10月は5週目の水曜日に秋のスペシャルクラスを開催いたします。

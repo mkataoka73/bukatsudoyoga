@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<div class="container">
+  <div class="title">
+    <h1>{{ page.title }}</h1>
+  </div>
+  <div class="img hero">
+    <img src="{{ page.image_path | relative_url }}" alt="{{ page.title }}">
+  </div>
+  <div class="description">
+    {{ page.content }}
+  </div>
+  <div class="details">
+    <div class="date">
+      <p>
+        【スケジュール】<br>
+        {% for date in page.dates %}
+
+          {{ date | date: "%-m/%-d " }}
+          {% assign d = date | date:"%w"  %}
+          {% case d %}
+            {% when '0' %}(日)
+            {% when '1' %}(月)
+            {% when '2' %}(火)
+            {% when '3' %}(水)
+            {% when '4' %}(木)
+            {% when '5' %}(金)
+            {% when '6' %}(土)
+          {% endcase %}
+          <br>
+        {% endfor %}
+      </p>
+      <p>
+        【時間】 <br>
+          金曜日　{{ page.times[0]["day"] }} <br>
+          土日　　{{ page.times[1]["night"] }}
+      </p>
+    </div>
+    <div class="place">
+      <p>
+        【場所】<br>
+          {{ page.place }}
+      </p>
+    </div>
+    <div class="price">
+      <p>【費用】<br>
+        マットをお持ちの方：{{ page.fee[0]["with mat"] }} ／ヨガマットレンタル： {{page.fee[1]["without mat"] }}
+      </p>
+    </div>
+  </div>
+  <div class="link">
+    <a href="{{ page.official_url }}">More Info in Official Site</a>
+  </div>
+</div>

@@ -1,9 +1,21 @@
 ---
+layout: event
 title: コンパスヨコハマ 2019
-date: 2019-09-20
+dates:
+ - 2019-09-20
+ - 2019-09-22
+ - 2019-09-27
+ - 2019-09-28
+times:
+  - day: 11:00~12:00
+  - night: 19:00~20:00
 type: yoga
 image_path: /images/photo/yoga_cliff.jpg
 place: 横浜美術館前広場
+official_url: https://compass.yafjp.org#andmore
+fee:
+  - with mat: 無料
+  - without mat: ¥500
 ---
 みなとみらい・グランモール公園（マークイズと横浜美術館の間にある広場）で、
 今週末より開催されるイベント「コンパスヨコハマ2019」。

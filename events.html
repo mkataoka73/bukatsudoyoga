@@ -18,7 +18,6 @@ title: Events
     </div>
     <div class="box-wrapper">
       {% assign yoga_events = site.events | where: "type", "yoga" | sort: 'date' | reverse %}
-      {% assign days = "日,月,火,水,金,土" | split: "," %}
       {% for yoga_event in yoga_events limit:3 %}
         <div class="event-box">
           <div class="event-image">
@@ -28,9 +27,21 @@ title: Events
             <h4>{{ yoga_event.title }}</h4>
             <p>{{ yoga_event.excerpt }}</p>
             <p class="date">
-              日時: {{ yoga_event.date | date: "%-m/%-d %a" }}　{{ yoga_event.time }}
+              日時: {{ yoga_event.date | date: "%-m/%-d " }}
+              {% assign d = yoga_event.date | date:"%w"  %}
+              {% case d %}
+                {% when '0' %}(日)
+                {% when '1' %}(月)
+                {% when '2' %}(火)
+                {% when '3' %}(水)
+                {% when '4' %}(木)
+                {% when '5' %}(金)
+                {% when '6' %}(土)
+              {% endcase %}
+              {{ yoga_event.time }}
             </p>
             <!-- TODO; link to more content -->
+            <a href="{{ yoga_event.url | relative_url }}">>>Read more</a>
           </div>
         </div>
       {% endfor %}
