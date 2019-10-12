@@ -4,38 +4,29 @@ title: Events
 ---
 <div class="container events-section">
   <div class="events-header">
-    <h1>季節のイベント</h1>
-    <h3>定期クラス以外に、こんな活動もしています。</h3>
+    <h1>Events</h1>
+    <h3>定期クラス以外にも色々開催しています</h3>
   </div>
 </div>
 
 <div class="container events-wrapper">
-  <div class="event-box">
-    <div class="event-image">
-      <img src="{{ "/images/event_icon/cooking.svg" | relative_url }}" alt="料理会">
-    </div>
+  <!-- TODO: Refactor to collections -->
+  <!-- TODO: make section: yoga or other event -->
+  <!-- TODO: individual page for each event -->
+  <div class="events-wrapper other-events">
+    {% assign events = site.events | sort: 'date' | reverse %}
+    {% for event in events limit:3 %}
+      <div class="event-box">
+        <div class="event-image">
+          <img src="{{ event.image_path | relative_url }}" alt="{{ event.title }}">
+        </div>
+        <div class="event-text">
+          <h4>{{ event.title }}</h4>
+          <p>{{ event.content }}</p>
+          <!-- TODO; link to more content -->
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 
-    <div class="event-text">
-      <h4>料理会</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-    </div>
-  </div>
-  <div class="event-box">
-    <div class="event-image">
-      <img src=" {{"/images/event_icon/picnic.svg" | relative_url }}" alt="臨港パークでピクニック">
-    </div>
-    <div class="event-text">
-      <h4>ピクニック</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-    </div>
-  </div>
-  <div class="event-box">
-    <div class="event-image">
-      <img src=" {{"/images/event_icon/farewell.svg" | relative_url }}" alt="送別会">
-    </div>
-    <div class="event-text">
-      <h4>送別会</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-    </div>
-  </div>
 </div>
