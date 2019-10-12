@@ -86,7 +86,6 @@ p,li {
 
 /* HOMEPAGE STYLES */
 .container {
-  /* border: 1px solid #aaa; */
   margin-bottom: 15px;
   width: 100%
 }
@@ -139,9 +138,10 @@ p,li {
 }
 .home-text {
   font-family: 'M PLUS 1p', sans-serif;
-  width: 75%;
-  max-width: 600px;
+  letter-spacing: 0.1em;
   margin: auto;
+  max-width: 600px;
+  width: 75%;
 }
 .home-text .text-section ~ .text-section {
   margin-top: 10vh;
@@ -151,10 +151,8 @@ p,li {
   letter-spacing: 0.2em;
 }
 .home-text p {
-
   font-size: 0.8em;
   line-height: 1.8;
-  letter-spacing: 0.1em;
 }
 .home-news li {
   list-style: none;
