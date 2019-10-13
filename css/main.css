@@ -77,6 +77,12 @@ p,li,a {
 	position: relative;
 }
 
+/* MOBILE MENU */
+.mobile-menu-check,
+.show-mobile-menu {
+  display: none;
+}
+
 /* HOMEPAGE STYLES */
 .container {
   margin-bottom: 15px;
@@ -122,7 +128,7 @@ p,li,a {
   transform: translateX(-4%);
 }
 .home-section {
-  margin: 5px 0;
+  margin: 0;
   text-align: left;
 }
 .hero-home {
@@ -162,7 +168,6 @@ p,li,a {
   font-size: 0.8em;
 }
 .footer {
-  /* border: 1px solid #aaa; */
   padding: 15px;
 }
 
@@ -374,9 +379,96 @@ p,li,a {
     padding: 0;
   }
   /* HEADER STYLES */
+  .header {
+    height: 12vh;
+  }
   .nav-links a {
     padding: 5px;
   }
+
+  /* HEADER STYLE */
+  .header a {
+    color: #000;
+    font-size: 1em;
+    padding: 0.5em;
+    letter-spacing: 0.2em;
+  }
+  .header nav {
+    height: 100%;
+  }
+  .header .header-logo {
+    display: block;
+    padding: 0 1.5vw;
+    height: 12vh;
+    width: 12vh;
+  }
+  .header-logo img {
+    height: 100%;
+    width: 100%;
+  }
+  /* MOBILE MENU */
+  .show-mobile-menu {
+    display: block;
+    float: right;
+    font-size: 2.5vh;
+    letter-spacing: 0.3em;
+    font-family: 'M Plus 1p', sans-serif;
+    margin-top: 1vh;
+    padding: 1.3em;
+    position: relative;
+  }
+  .header-nav {
+    /* max-height: 0; */
+    background-color: #fff;
+    box-sizing: border-box;
+    height: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 8vh;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    z-index: 9;
+  }
+  .header-nav li {
+    display: block;
+    margin-top: 1em;
+    height: 3em;
+  }
+  .header-nav li ~ li {
+    /* border: 0;
+    padding: 0; */
+    margin-left: 0;
+  }
+  .header-nav li:last-child {
+    margin-bottom: 1em;
+    margin-right: 0;
+  }
+  /* HIDE DROWDOWN IN THE NAV MENU */
+  .header-nav .dropdown:hover .drop-menu,
+  .header-nav .drop-trigger::after{
+    display: none;
+  }
+  .header-nav .drop-trigger {
+    padding-right: 0;
+  }
+  .mobile-menu-check:checked ~ .header-nav {
+    /* display: block; */
+    height: 50vh;
+  }
+  .mobile-menu-check:checked ~ .show-mobile-menu:after {
+    background-color: #fff;
+    color: #000;
+    content: "X";
+    left: 0;
+    position: absolute;
+    top: 1.5em;
+    width: 100%;
+    text-align: center;
+  }
+
   /* HOMEPAGE STYLES */
   .hero-content .clb-name-jpn {
     font-size: 10vw;
@@ -423,14 +515,6 @@ p,li,a {
   }
 }
 @media (max-width: 500px) {
-  /* HEADER STYLE */
-  .header-nav li ~ li {
-    margin-left: 0;
-  }
-  .header a {
-    font-size: 0.6em;
-    padding: 3px;
-  }
   /* HOMEPAGE STYLES */
   .slider img {
     display: block;
