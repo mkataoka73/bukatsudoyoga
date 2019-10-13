@@ -4,6 +4,7 @@ html, body {
   /* background-color: #fcfaf5; */
   margin: 0;
   padding: 0;
+  letter-spacing: 0.05rem;
 }
 h1 {
   color: #222;
@@ -74,6 +75,7 @@ p,li,a {
 .header-logo img {
 	height: 8vh;
 	width: 8vh;
+  padding-left: 1em;
 	position: relative;
 }
 
