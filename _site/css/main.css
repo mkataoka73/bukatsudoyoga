@@ -88,21 +88,6 @@ p,li,a {
   margin-bottom: 15px;
   width: 100%
 }
-.home-container {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-.full-hero {
-  padding: 0;
-  text-align: center;
-  position: relative;
-}
-.slider {
-  width: 50vw;
-  height: 50vw;
-  display: block;
-}
 .slider div {
   height: 90vh;
   width: 100vw;
@@ -115,8 +100,10 @@ p,li,a {
 .dots {
   position: relative;
   text-align: center;
-  margin-top: -5em;
-  margin-bottom: 7em;
+  transform: translateY(-5em);
+}
+.slick-dots {
+  bottom: 0px;
 }
 .site-title {
   position: absolute;
@@ -136,7 +123,7 @@ p,li,a {
 }
 .site-title .title-sub {
   color: #fff;
-  font-family: 'Amatic SC',cursive;
+  font-family: 'Amatic SC', cursive;
   font-size: 3vw;
   transform: translateX(-4%);
 }
@@ -442,10 +429,15 @@ p,li,a {
   }
 }
 @media (max-width: 500px) {
-  /* HOMEPAGE STYLES */
-  .slick-list {
-    overflow: visible;
+  /* HEADER STYLE */
+  .header-nav li ~ li {
+    margin-left: 0;
   }
+  .header a {
+    font-size: 0.6em;
+    padding: 3px;
+  }
+  /* HOMEPAGE STYLES */
   .slider img {
     display: block;
     width: 100%;
