@@ -1,9 +1,3 @@
-/* FONT PRESET */
-@font-face {
-  font-family: 'kokoro';
-  src: url( "{{ fonts/kokoro/Kokoro.otf | relative_url }}" ) format("opentype");
-}
-
 /* GLOBAL STYLES */
 html, body {
   /* font-size: 10px; */
