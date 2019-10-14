@@ -21,17 +21,23 @@ title: Events
       {% for yoga_event in yoga_events limit:3 %}
         <div class="event-box">
           <div class="event-image">
-            <img src="{{ yoga_event.image_path }}" alt="{{ yoga_event.title }}">
+            <a href="{{ yoga_event.url }}">
+              <img src="{{ yoga_event.image_path }}" alt="{{ yoga_event.title }}">
+            </a>
           </div>
           <div class="event-text">
-            <h4>{{ yoga_event.title }}</h4>
+            <a href="{{ yoga_event.url }}">
+              <h4 class="event-title">{{ yoga_event.title }}</h4>
+            </a>
             <p>{{ yoga_event.excerpt }}</p>
             <p class="date">
               日時: {{ yoga_event.date | date: "%-m/%-d " }}
               {{ yoga_event.time }}
             </p>
-            <!-- TODO; link to more content -->
-            <a href="{{ yoga_event.url }}">>>Read more</a>
+            <p>
+              <a class="read-more" href="{{ yoga_event.url }}">>>Read more</a>
+            </p>
+
           </div>
         </div>
       {% endfor %}
