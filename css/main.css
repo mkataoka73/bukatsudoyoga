@@ -24,7 +24,7 @@ a {
 a:hover {
   text-decoration-color: rgba(99, 151, 181, 0.8);
 }
-p,li,a {
+p,li {
   font-size: 0.9rem;
 }
 .text-area {
@@ -35,8 +35,40 @@ p,li,a {
 }
 .img-s {
   height: 300px;
-  width: auto;
+  width: 100%;
   object-fit: cover;
+}
+/* SOCIAL STYLES */
+.social-link {
+  background: rgba(150, 150, 150, 0.5);
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-family: helvetica, arial, sans;
+  font-size: 1em;
+  font-weight: bold;
+  height: 3em;
+  line-height: 1;
+  padding-top: 1em;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 3em;
+}
+.social-link:hover,
+.social-link:active {
+  background-color: #000;
+  color: #fff;
+}
+.social-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.social-list > li {
+  display: inline-block;
+  margin: 0 0.5em;
 }
 
 /* HEADER STYLES */
@@ -74,10 +106,16 @@ p,li,a {
   left: 0px;
   bottom: 0px;
   content: '';
-  background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
-  opacity: 0.6;
+  background-image: linear-gradient(to right, #f43b47 0%, #453a94 100%);
+  opacity: 0.3;
   transition: all 0.5s ease;
   z-index: 1;
+}
+.header-nav > li:first-child a {
+  /* background: linear-gradient(to right, #f43b47 0%, #453a94 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.9; */
 }
 .nav-links a:hover:before {
   color: #2175cf;
@@ -85,9 +123,9 @@ p,li,a {
 }
 .header-logo {
   display: block;
-  height: 8vh;
-  width: 8vh;
-  padding-left: 1em;
+  height: 3.8em;
+  width: 3.8em;
+  margin-left: 0.5em;
 }
 .header-logo img {
 	height: 100%;
@@ -137,6 +175,7 @@ p,li,a {
   font-family: 'Noto Serif JP', serif;
   letter-spacing: 0.7em;
   margin: 0;
+  /* text-shadow: 0px 0px 2px #777; */
 }
 .site-title .title-main {
   font-weight: 200;
@@ -146,7 +185,7 @@ p,li,a {
   color: #fff;
   font-family: 'Amatic SC', cursive;
   font-size: 3vw;
-  font-weight: bold;
+  /* font-weight: bold; */
   transform: translateX(-4%);
 }
 .home-section {
@@ -172,14 +211,15 @@ p,li,a {
   font-size: 0.8em;
   line-height: 1.8;
 }
-.home-news li {
+.news-list {
   list-style: none;
   text-align: left;
   line-height: 2;
 }
-.about-bukatsudo span {
+.bkd-link {
   display: block;
   text-align: right;
+  font-style: italic;
 }
 
 /* FOOTER STYLES */
@@ -193,7 +233,8 @@ p,li,a {
   text-align: center;
   font-weight: bold;
 }
-.footer p,a {
+.footer p,
+.footer a {
   font-size: 0.5em;
 }
 
@@ -262,12 +303,12 @@ p,li,a {
   width: 30%;
 }
 .member-box img {
-  border-radius: 40%;
+  border-radius: 50%;
   display: block;
   margin: 0 auto;
   height: 160px;
   width: 160px;
-  object-fit: none;
+  object-fit: cover;
 }
 .member-box h4 {
   font-size: 0.7em;
@@ -411,7 +452,7 @@ p,li,a {
   content: "";
   background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
   position: absolute;
-  opacity: 0.8;
+  opacity: 0.5;
   top: 3rem;
   left: 20%;
 }
@@ -470,12 +511,24 @@ p,li,a {
    margin-right: 1em;
  }
 
-
+@media (max-width:800px) {
+  /* EVENTS STYLES */
+  /* individual event page */
+  .hero h1 {
+    font-size: 3.5vw;
+  }
+}
 @media (max-width: 600px) {
   /* GLOBAL STYLES */
   .container {
     margin: 0;
     padding: 0;
+  }
+  .text-area h2 {
+    font-size: 5vw;
+    margin: 5vh;
+    position: relative;
+    display: inline-block;
   }
   /* HEADER STYLES */
   .header {
@@ -570,11 +623,40 @@ p,li,a {
   }
 
   /* HOMEPAGE STYLES */
+  .slider img {
+    object-fit: 50%;
+    object-position: 40% 50%;
+    height: 100%;
+    width: 100%;
+  }
   .hero-content .clb-name-jpn {
     font-size: 10vw;
   }
   .hero-content .clb-name-eng {
     font-size: 4vw;
+  }
+
+  /* ABOUT STYLES */
+  .about-container {
+    margin: auto;
+  }
+  .text-about h1 {
+    font-size: 1.5em;
+  }
+  .text-about h2 {
+    font-size: 1.2em;
+    margin: 5vh 5vh 5vh 0;
+  }
+  .img-s {
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+  /* MEMBER STYLES */
+  .member-box img {
+    object-fit: cover;
+    width: 30vw;
+    height: 30vw;
   }
 
   /* EVENT STYLES */
@@ -616,12 +698,7 @@ p,li,a {
   /* Individual event page */
   .hero h1 {
     font-size: 5vw;
-  }
-  .text-area h2 {
-    font-size: 5vw;
-    margin: 5vh;
-    position: relative;
-    display: inline-block;
+    transform: translateY(-100%);
   }
 }
 @media (max-width: 500px) {
@@ -634,7 +711,7 @@ p,li,a {
   /* EVENT STYLES */
   .events-wrapper {
     flex-direction: column;
-    max-width: none;
+    /* max-width: none; */
     padding: 0;
   }
   .event-box {

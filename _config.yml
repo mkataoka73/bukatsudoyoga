@@ -9,5 +9,6 @@ timezone: Asia/Tokyo
 
 collections:
    members:
+     output: true
    events:
      output: true

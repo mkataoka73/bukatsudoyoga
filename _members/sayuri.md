@@ -1,6 +1,7 @@
 ---
+layout: event
 name: Sayuri
-image_path: /images/prof_icon/stretch_forward.svg
+image_path: /images/photo/prof/sayuri.jpg
 number: 4
 love: ashtanga yoga
 ---

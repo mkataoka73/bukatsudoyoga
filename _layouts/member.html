@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<div class="container event-page">
+  <div class="hero">
+    <div class="bg" style="background-image: url( {{ page.image_path }})"></div>
+    <h1>{{ page.name }}</h1>
+  </div>
+  <div class="text-area text-event">
+    <div class="description">
+      <h2>About</h2>
+      {{ page.content }}
+    </div>
+    <div class="details">
+      <div class="date">
+      </div>
+      <div class="place">
+      </div>
+    </div>
+    <div class="link">
+      <h2>Links</h2>
+      <div class="social-links">
+        <ul class="social-list">
+          <li>
+            <a href="https://example.com/" class="social-link">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://example.com/" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="{{ page.instagram }}" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a href="{{ page.official_url }}">Official Site</a>
+    </div>
+  </div>
+</div>

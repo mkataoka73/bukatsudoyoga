@@ -1,4 +1,5 @@
 ---
+layout: event
 title: 春のピクニック
 date: 2017-05-25
 image_path: /images/photo/picnic.jpg

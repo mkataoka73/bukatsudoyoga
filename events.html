@@ -10,16 +10,19 @@ title: Events
 </div>
 
 <div class="container events-wrapper">
-  <!-- TODO: individual page for each event:
-              link in title, img, add "Read more" -->
   <div class="event-section yoga-events">
     <div class="event-heading">
       <h2>Yoga Events</h2>
     </div>
     <div class="box-wrapper">
-      {% assign yoga_events = site.events | where: "type", "yoga" | sort: 'date' | reverse %}
+      {% assign yoga_events = site.events | where: "type", "yoga" |
+                                            sort: 'date' | reverse %}
       {% for yoga_event in yoga_events limit:3 %}
         <div class="event-box">
+          <!-- TODO: when hovered,
+           - read more text pop up
+           - darken, blur img
+          -->
           <div class="event-image">
             <a href="{{ yoga_event.url }}">
               <img src="{{ yoga_event.image_path }}" alt="{{ yoga_event.title }}">
@@ -31,8 +34,34 @@ title: Events
             </a>
             <p>{{ yoga_event.excerpt }}</p>
             <p class="date">
-              日時: {{ yoga_event.date | date: "%-m/%-d " }}
-              {{ yoga_event.time }}
+              {% assign dates = yoga_event.dates %}
+              {% if dates.size == 1 %}
+                Date: {{ dates[0] | date: "%-m/%-d " }}
+                {% assign day = dates[0] | date: "%w" %}
+                {% case day %}
+                  {% when '0' %}(日)
+                  {% when '1' %}(月)
+                  {% when '2' %}(火)
+                  {% when '3' %}(水)
+                  {% when '4' %}(木)
+                  {% when '5' %}(金)
+                  {% when '6' %}(土)
+              {% endcase %}
+              {% else %}
+                Date: {{ dates[0] | date: "%-m/%-d " }}
+                {% assign day = dates[0] | date: "%w" %}
+                {% case day %}
+                  {% when '0' %}(日)
+                  {% when '1' %}(月)
+                  {% when '2' %}(火)
+                  {% when '3' %}(水)
+                  {% when '4' %}(木)
+                  {% when '5' %}(金)
+                  {% when '6' %}(土)
+                {% endcase %}
+                <span style="font-size: 0.8em">ほか</span>
+              {% endif %}
+              <!-- {{ yoga_event.times[0] }} -->
             </p>
             <p>
               <a class="read-more" href="{{ yoga_event.url }}">>>Read more</a>
@@ -56,9 +85,12 @@ title: Events
             <img src="{{ event.image_path }}" alt="{{ event.title }}">
           </div>
           <div class="event-text">
-            <h4>{{ event.title }}</h4>
+            <h4 class="event-title">{{ event.title }}</h4>
             <p>{{ event.excerpt }}</p>
             <!-- TODO; link to more content -->
+            <p>
+              <a class="read-more" href="{{ event.url }}">>>Read more</a>
+            </p>
           </div>
         </div>
       {% endfor %}

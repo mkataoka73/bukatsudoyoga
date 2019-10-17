@@ -1,7 +1,8 @@
 ---
+layout: event
 name: Ayumi
 nickname: Ayu
-image_path: /images/prof_icon/stretch_forward.svg
+image_path: /images/photo/prof/ayumi.jpg
 number: 2
 love: dancing
 ---

@@ -15,7 +15,7 @@ layout: default
       <div class="date">
         <h2>Date & Time</h2>
         <p>
-          {% for date in page.dates limit: 4 %}
+          {% for date in page.dates %}
             {{ date | date: "%-m/%-d " }}
             {% assign d = date | date:"%w"  %}
             {% case d %}
@@ -40,14 +40,16 @@ layout: default
         <h2>Place</h2>
         <p>{{ page.place }}</p>
       </div>
-      <div class="fee">
-        <h2>Fee</h2>
-        <p>
-          {% for fee in page.fees %}
-            {{ fee }}
-          {% endfor %}
-        </p>
-      </div>
+      {% if page.type == "yoga" %}
+        <div class="fee">
+          <h2>Fee</h2>
+          <p>
+            {% for fee in page.fees %}
+              {{ fee }}
+            {% endfor %}
+          </p>
+        </div>
+      {% endif %}
     </div>
     <div class="link">
       <a href="{{ page.official_url }}">More Info in Official Site</a>

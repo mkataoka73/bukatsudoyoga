@@ -1,7 +1,10 @@
 ---
+layout: member
 name: Yossie
-image_path: /images/prof_icon/meditate_color.svg
+image_path: /images/photo/prof/mkataoka.jpg
 number: 99
 love: beers, internet
+instagram: url
+facebook: url
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit

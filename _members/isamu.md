@@ -1,6 +1,7 @@
 ---
+layout: event
 name: Isamu
-image_path: /images/prof_icon/meditate_color.svg
+image_path: /images/photo/prof/isamu2.jpg
 number: 7
 love: dogs, mountains
 ---
