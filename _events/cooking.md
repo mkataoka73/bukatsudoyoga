@@ -1,7 +1,8 @@
 ---
 layout: event
 title: cooking party
-date: 2018-01-27
+dates:
+  - 2018-01-27
 image_path: /images/photo/cooking.jpg
 type: other
 ---

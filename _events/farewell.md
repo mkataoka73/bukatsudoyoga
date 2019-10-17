@@ -1,7 +1,8 @@
 ---
 layout: event
 title: お見送り
-date: 2017-06-25
+dates:
+  - 2017-06-25
 image_path: /images/photo/farewell.jpg
 type: other
 ---

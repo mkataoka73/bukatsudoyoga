@@ -212,9 +212,29 @@ p,li {
   line-height: 1.8;
 }
 .news-list {
-  list-style: none;
-  text-align: left;
   line-height: 2;
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  text-decoration: none;
+}
+.news-list a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.news-list a:hover {
+  color: #6397b5;
+}
+.news-list .event-date {
+  display: inline-block;
+  width: 10em;
+}
+.event-date span {
+  display: inline-block;
+}
+.news-list .event-title {
+  font-size: 0.8rem;
 }
 .bkd-link {
   display: block;
@@ -366,7 +386,7 @@ p,li {
   width: 100%;
   height: 100%;
 }
-.event-title {
+.event-box .event-title {
   color: #000;
   font-size: 0.8em;
   font-weight: bolder;
@@ -634,6 +654,23 @@ p,li {
   }
   .hero-content .clb-name-eng {
     font-size: 4vw;
+  }
+  .home-text h2 {
+    margin-left: 0;
+    margin-bottom: 2vh;
+  }
+  .news-list .event-date {
+    width: 8em;
+    font-size: 2vw;
+  }
+  .event-date .date {
+    width: 4em;
+  }
+  .event-date .day {
+    width: 3em;
+  }
+  .news-list .event-title {
+    font-size: 2vw;
   }
 
   /* ABOUT STYLES */
