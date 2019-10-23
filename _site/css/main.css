@@ -127,10 +127,11 @@ p,li {
   text-decoration: none;
   vertical-align: middle;
   width: 3em;
+  transition: background-color 0.5s ease;
 }
 .social-link:hover,
 .social-link:active {
-  background-color: #000;
+  background-color: rgba(68, 58, 148, 0.8);
   color: #fff;
 }
 .social-list {
