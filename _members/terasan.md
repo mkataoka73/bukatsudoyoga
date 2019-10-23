@@ -2,7 +2,7 @@
 layout: member
 name: Tera san
 nickname: Terasan
-image_path: /images/photo/prof/tera2.JPG
+image_path: /images/photo/prof/tera2.jpg
 number: 3
 love: marathon
 ---
