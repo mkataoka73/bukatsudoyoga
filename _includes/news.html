@@ -3,7 +3,7 @@
   {% assign events = site.events | sort: 'dates' | reverse %}
   {% for event in events %}
   <li>
-    <a href="{{ event.url }}">
+    <a href="{{ event.url | relative_url }}">
       <span class="event-date">
         <span class="date">{{ event.dates[0] | date: "%-m/%d" }}</span>
         {% assign d = event.dates[0] | date: "%w" %}

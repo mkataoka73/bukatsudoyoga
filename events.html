@@ -24,12 +24,12 @@ title: Events
            - darken, blur img
           -->
           <div class="event-image">
-            <a href="{{ yoga_event.url }}">
-              <img src="{{ yoga_event.image_path }}" alt="{{ yoga_event.title }}">
+            <a href="{{ yoga_event.url | relative_url }}">
+              <img src="{{ yoga_event.image_path | relative_url }}" alt="{{ yoga_event.title }}">
             </a>
           </div>
           <div class="event-text">
-            <a href="{{ yoga_event.url }}">
+            <a href="{{ yoga_event.url | relative_url }}">
               <h4 class="event-title">{{ yoga_event.title }}</h4>
             </a>
             <p>{{ yoga_event.excerpt }}</p>
@@ -64,7 +64,7 @@ title: Events
               <!-- {{ yoga_event.times[0] }} -->
             </p>
             <p>
-              <a class="read-more" href="{{ yoga_event.url }}">>>Read more</a>
+              <a class="read-more" href="{{ yoga_event.url | relative_url }}">>>Read more</a>
             </p>
 
           </div>
@@ -81,15 +81,15 @@ title: Events
       {% assign events = site.events | where: "type", "other" | sort: 'date' | reverse %}
       {% for event in events limit:3 %}
         <div class="event-box">
+          <!-- TODO: link on image and h4 -->
           <div class="event-image">
-            <img src="{{ event.image_path }}" alt="{{ event.title }}">
+            <img src="{{ event.image_path | relative_url }}" alt="{{ event.title }}">
           </div>
           <div class="event-text">
             <h4 class="event-title">{{ event.title }}</h4>
             <p>{{ event.excerpt }}</p>
-            <!-- TODO; link to more content -->
             <p>
-              <a class="read-more" href="{{ event.url }}">>>Read more</a>
+              <a class="read-more" href="{{ event.url | relative_url }}">>>Read more</a>
             </p>
           </div>
         </div>

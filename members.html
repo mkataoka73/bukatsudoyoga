@@ -12,8 +12,8 @@ title: Members
     {% assign members = site.members | sort: 'number' %}
     {% for member in members limit:9 %}
       <div class="member-box">
-        <a href="{{ member.url }}">
-          <img src="{{ member.image_path }}" alt="{{ member.name }}">
+        <a href="{{ member.url | relative_url }}">
+          <img src="{{ member.image_path | relative_url }}" alt="{{ member.name }}">
         </a>
         {% if member.instructor == 1 %}
           <h4 class="instructor">{{ member.name }}</h4>

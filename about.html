@@ -15,6 +15,7 @@ layout: default
     <div class="place">
       <h2>Place</h2>
       <p>Bukatsudo みなとみらい</p>
+      <!-- FIXME: access url may not be working -->
       <a class="small-anchor" href="http://bukatsu-do.jp/access.html">Access</a>
     </div>
     <div class="price">
@@ -22,7 +23,7 @@ layout: default
       <p>¥1,500</p>
       <p class="coffee-ticket">coffee ticket included</p>
       <div class="img-s">
-        <img class="img-s" src="/images/photo/coffee_stand.jpg" alt="coffee">
+        <img class="img-s" src="{{ "/images/photo/coffee_stand.jpg" | relative_url }}" alt="coffee">
       </div>
     </div>
   </div>
