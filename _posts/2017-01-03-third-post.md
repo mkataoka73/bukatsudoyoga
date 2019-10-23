@@ -1,9 +1,10 @@
 ---
-layout: post
-author: him
 title: our third post
-postHero: /images/photo/landmark_tower.jpg
+layout: post
+author: yossie
+postHero: "/images/photo/landmark_tower.jpg"
 ---
+
 ### Lorem Ipsum
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 

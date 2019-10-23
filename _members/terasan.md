@@ -1,5 +1,5 @@
 ---
-layout: event
+layout: member
 name: Tera san
 nickname: Terasan
 image_path: /images/photo/prof/tera2.JPG

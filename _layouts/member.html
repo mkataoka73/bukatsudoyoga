@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-<div class="container event-page">
+<div class="container indv-page member-page">
   <div class="hero">
     <div class="bg" style="background-image: url( {{ page.image_path }})"></div>
     <h1>{{ page.name }}</h1>
   </div>
-  <div class="text-area text-event">
+  <div class="text-area text-member">
     <div class="description">
       <h2>About</h2>
       {{ page.content }}
@@ -38,7 +38,10 @@ layout: default
           </li>
         </ul>
       </div>
-      <a href="{{ page.official_url }}">Official Site</a>
+      {% if page.official_url %}
+        <!-- FIXME: margin-top -->
+        <a class="small-anchor" href="{{ page.official_url }}">Official Site</a>
+      {% endif %}
     </div>
   </div>
 </div>

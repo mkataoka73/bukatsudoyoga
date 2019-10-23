@@ -1,0 +1,31 @@
+<ul class="news-list">
+  <!-- FIXME: font-size in mobile too small -->
+  {% assign events = site.events | sort: 'dates' | reverse %}
+  {% for event in events %}
+  <li>
+    <a href="{{ event.url }}">
+      <span class="event-date">
+        <span class="date">{{ event.dates[0] | date: "%-m/%d" }}</span>
+        {% assign d = event.dates[0] | date: "%w" %}
+        <span class="day">
+          {% case d %}
+            {% when '0' %}(日)
+            {% when '1' %}(月)
+            {% when '2' %}(火)
+            {% when '3' %}(水)
+            {% when '4' %}(木)
+            {% when '5' %}(金)
+            {% when '6' %}(土)
+          {% endcase %}
+        </span>
+      </span>
+
+      {% if event.news-head %}
+        <span class="event-title">{{ event.news-head }}</span>
+      {% else %}
+        <span class="event-title">{{ event.title }}</span>
+      {% endif %}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

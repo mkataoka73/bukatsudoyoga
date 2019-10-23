@@ -1,5 +1,5 @@
 ---
-layout: event
+layout: member
 name: Mizuno Papa
 image_path: /images/photo/prof/mizuno2.jpg
 number: 6

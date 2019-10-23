@@ -1,6 +1,6 @@
 ---
-layout: event
-name: Megumi 1
+layout: member
+name: Megumi
 image_path: /images/prof_icon/stretch_forward.svg
 number: 8
 love: ???

@@ -1,5 +1,5 @@
 ---
-layout: event
+layout: member
 name: Sayuri
 image_path: /images/photo/prof/sayuri.jpg
 number: 4
