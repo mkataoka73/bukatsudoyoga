@@ -2,6 +2,8 @@ title: ヨガ部 | Bukatsudo Yoga
 email: mkataoka73@gmail.com
 description: This site is a demo site created by a member of Bukatsudo Yoga club.
 
+baseurl: "http://jlmercury.github.io/bukatsudoyoga"
+
 future: true
 timezone: Asia/Tokyo
 
