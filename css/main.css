@@ -5,6 +5,7 @@ html, body {
   margin: 0;
   padding: 0;
   letter-spacing: 0.05rem;
+  font-family: sans-serif;
 }
 h1 {
   color: #222;
