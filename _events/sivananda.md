@@ -5,7 +5,7 @@ news-head: 夜ヨガにスペシャルゲスト！
 dates:
   - 2019-10-30
 times:
-  - 19:30〜20:30 (60min)
+  - 19:30〜20:45 (75min)
 image_path: /images/photo/yoga_cliff.jpg
 type: yoga
 place: Bukatsudo
