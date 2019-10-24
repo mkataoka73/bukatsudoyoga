@@ -714,8 +714,8 @@ p,li {
   }
   .member-box img {
     object-fit: cover;
-    width: 30vw;
-    height: 30vw;
+    width: 28vw;
+    height: 28vw;
   }
 
   /* EVENT STYLES */
