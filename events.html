@@ -2,100 +2,99 @@
 layout: default
 title: Events
 ---
-<div class="container events-section">
+<div class="container events-container">
+  <h1 class="title">Events</h1>
   <div class="events-header">
-    <h1>Events</h1>
     <p>定期クラス以外のヨガイベント、部員で開催するイベントなどです。</p>
   </div>
-</div>
-
-<div class="container events-wrapper">
-  <div class="event-section yoga-events">
-    <div class="event-heading">
-      <h2>Yoga Events</h2>
-    </div>
-    <div class="box-wrapper">
-      {% assign yoga_events = site.events | where: "type", "yoga" |
-                                            sort: 'date' | reverse %}
-      {% for yoga_event in yoga_events limit:3 %}
-        <div class="event-box">
-          <!-- TODO: when hovered,
-           - read more text pop up
-           - darken, blur img
-          -->
-          <div class="event-image">
-            <a href="{{ yoga_event.url | relative_url }}">
-              <img src="{{ yoga_event.image_path | relative_url }}" alt="{{ yoga_event.title }}">
-            </a>
-          </div>
-          <div class="event-text">
-            <a href="{{ yoga_event.url | relative_url }}">
-              <h4 class="event-title">{{ yoga_event.title }}</h4>
-            </a>
-            <p>{{ yoga_event.excerpt }}</p>
-            <p class="date">
-              {% assign dates = yoga_event.dates %}
-              {% if dates.size == 1 %}
-                Date: {{ dates[0] | date: "%-m/%-d " }}
-                {% assign day = dates[0] | date: "%w" %}
-                {% case day %}
-                  {% when '0' %}(日)
-                  {% when '1' %}(月)
-                  {% when '2' %}(火)
-                  {% when '3' %}(水)
-                  {% when '4' %}(木)
-                  {% when '5' %}(金)
-                  {% when '6' %}(土)
-              {% endcase %}
-              {% else %}
-                Date: {{ dates[0] | date: "%-m/%-d " }}
-                {% assign day = dates[0] | date: "%w" %}
-                {% case day %}
-                  {% when '0' %}(日)
-                  {% when '1' %}(月)
-                  {% when '2' %}(火)
-                  {% when '3' %}(水)
-                  {% when '4' %}(木)
-                  {% when '5' %}(金)
-                  {% when '6' %}(土)
+  <div class="events-wrapper">
+    <div class="event-section yoga-events">
+      <div class="event-heading">
+        <h2>Yoga Events</h2>
+      </div>
+      <div class="box-wrapper">
+        {% assign yoga_events = site.events | where: "type", "yoga" |
+                                              sort: 'date' | reverse %}
+        {% for yoga_event in yoga_events limit:3 %}
+          <div class="event-box">
+            <!-- TODO: when hovered,
+             - read more text pop up
+             - darken, blur img
+            -->
+            <div class="event-image">
+              <a href="{{ yoga_event.url | relative_url }}">
+                <img src="{{ yoga_event.image_path | relative_url }}" alt="{{ yoga_event.title }}">
+              </a>
+            </div>
+            <div class="event-text">
+              <a href="{{ yoga_event.url | relative_url }}">
+                <h4 class="event-title">{{ yoga_event.title }}</h4>
+              </a>
+              <p>{{ yoga_event.excerpt }}</p>
+              <p class="date">
+                {% assign dates = yoga_event.dates %}
+                {% if dates.size == 1 %}
+                  Date: {{ dates[0] | date: "%-m/%-d " }}
+                  {% assign day = dates[0] | date: "%w" %}
+                  {% case day %}
+                    {% when '0' %}(日)
+                    {% when '1' %}(月)
+                    {% when '2' %}(火)
+                    {% when '3' %}(水)
+                    {% when '4' %}(木)
+                    {% when '5' %}(金)
+                    {% when '6' %}(土)
                 {% endcase %}
-                <span style="font-size: 0.8em">ほか</span>
-              {% endif %}
-              <!-- {{ yoga_event.times[0] }} -->
-            </p>
-            <p>
-              <a class="read-more" href="{{ yoga_event.url | relative_url }}">>>Read more</a>
-            </p>
+                {% else %}
+                  Date: {{ dates[0] | date: "%-m/%-d " }}
+                  {% assign day = dates[0] | date: "%w" %}
+                  {% case day %}
+                    {% when '0' %}(日)
+                    {% when '1' %}(月)
+                    {% when '2' %}(火)
+                    {% when '3' %}(水)
+                    {% when '4' %}(木)
+                    {% when '5' %}(金)
+                    {% when '6' %}(土)
+                  {% endcase %}
+                  <span style="font-size: 0.8em">ほか</span>
+                {% endif %}
+                <!-- {{ yoga_event.times[0] }} -->
+              </p>
+              <p>
+                <a class="read-more" href="{{ yoga_event.url | relative_url }}">>>Read more</a>
+              </p>
 
+            </div>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
+
+    <div class="event-section other-events">
+      <div class="event-heading">
+        <h2>Other Events</h2>
+      </div>
+      <div class="box-wrapper">
+        {% assign events = site.events | where: "type", "other" | sort: 'date' | reverse %}
+        {% for event in events limit:3 %}
+          <div class="event-box">
+            <!-- TODO: link on image and h4 -->
+            <div class="event-image">
+              <img src="{{ event.image_path | relative_url }}" alt="{{ event.title }}">
+            </div>
+            <div class="event-text">
+              <h4 class="event-title">{{ event.title }}</h4>
+              <p>{{ event.excerpt }}</p>
+              <p>
+                <a class="read-more" href="{{ event.url | relative_url }}">>>Read more</a>
+              </p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+    </div>
+
   </div>
-
-  <div class="event-section other-events">
-    <div class="event-heading">
-      <h2>Other Events</h2>
-    </div>
-    <div class="box-wrapper">
-      {% assign events = site.events | where: "type", "other" | sort: 'date' | reverse %}
-      {% for event in events limit:3 %}
-        <div class="event-box">
-          <!-- TODO: link on image and h4 -->
-          <div class="event-image">
-            <img src="{{ event.image_path | relative_url }}" alt="{{ event.title }}">
-          </div>
-          <div class="event-text">
-            <h4 class="event-title">{{ event.title }}</h4>
-            <p>{{ event.excerpt }}</p>
-            <p>
-              <a class="read-more" href="{{ event.url | relative_url }}">>>Read more</a>
-            </p>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-
-  </div>
-
 </div>

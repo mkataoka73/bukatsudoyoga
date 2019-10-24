@@ -27,6 +27,11 @@ a:hover {
 p,li {
   font-size: 0.9rem;
 }
+.title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 .text-area {
   max-width: 600px;
   width: 70%;
@@ -462,6 +467,9 @@ p,li {
 }
 
 /* EVENTS STYLES */
+.events-container {
+  padding: 15px 0;
+}
 .events-header {
   text-align: center;
 }
