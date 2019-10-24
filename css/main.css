@@ -435,6 +435,9 @@ p,li {
 }
 
 /* EVENTS STYLES */
+.events-header {
+  text-align: center;
+}
 .events-wrapper {
   display: flex;
   flex-direction: column;
@@ -721,7 +724,6 @@ p,li {
   /* EVENT STYLES */
   .events-header {
     width: 80%;
-    text-align: center;
     margin: auto;
   }
   .events-wrapper {
