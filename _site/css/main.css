@@ -719,6 +719,11 @@ p,li {
   }
 
   /* EVENT STYLES */
+  .events-header {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
   .events-wrapper {
     flex-direction: column;
     max-width: none;
