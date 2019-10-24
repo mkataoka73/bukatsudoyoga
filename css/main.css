@@ -538,7 +538,9 @@ p,li {
 }
 
 /* BLOG STYLES */
-
+.blog-container {
+  padding: 15px 0;
+}
 .posts-wrapper :first-child {
  margin-top: 3em;
 }
