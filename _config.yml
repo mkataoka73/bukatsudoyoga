@@ -9,6 +9,11 @@ timezone: Asia/Tokyo
 
 collections:
    members:
+     name:
+       yossie: yossie
+       kanako: kanako
+     icon:
+       yossie: /bukatsudoyoga/images/photo/prof/mkataoka.jpg
      output: true
    events:
      output: true

@@ -4,7 +4,15 @@ layout: default
 <div class="blog-post">
   <img class="blog-hero" src="{{ page.postHero | relative_url  }}" alt="{{ page.title }}">
   <div class="text-area">
-    <h2>{{ page.title }}</h2>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% assign icon_list = site.collections[1].icon %}
+    {% assign author = page.author %}
+    <div class="post-info">
+      <span>
+        <span class="date">{{ page.date | date: "%Y.%m.%d" }}</span>
+         by {{ author }} <img class="author-icon" src="{{ icon_list[author] }}" alt="{{ author }}">
+      </span>
+    </div>
     {{ page.content }}
   </div>
 </div>

@@ -1,7 +1,7 @@
 /* GLOBAL STYLES */
 html, body {
   /* font-size: 10px; */
-  /* background-color: #fcfaf5; */
+  background-color: #faf8f0;
   margin: 0;
   padding: 0;
   letter-spacing: 0.05rem;
@@ -555,6 +555,9 @@ p,li {
  object-position: top;
  overflow: hidden;
 }
+.post-title {
+  letter-spacing: 0.01em;
+}
 .blog-post h2 {
   text-transform: capitalize;
 }
@@ -585,6 +588,24 @@ p,li {
    text-align: center;
    margin-right: 1em;
  }
+.blog-post .post-info {
+  height: 50px;
+}
+.post-info span {
+  color: #666;
+  height: 40px;
+  vertical-align: middle;
+  font-size: 0.7em;
+}
+.post-info .date {
+  /* font-size: 0.5em; */
+}
+.blog-post .author-icon {
+  display: inline;
+  border-radius: 50%;
+  width: 32px;
+  vertical-align: text-bottom;
+}
 
 @media (max-width:800px) {
   /* EVENTS STYLES */
