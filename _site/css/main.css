@@ -558,9 +558,7 @@ p,li {
 .post-title {
   letter-spacing: 0.1em;
 }
-.blog-post h2 {
-  text-transform: capitalize;
-}
+.blog-post h2,
 .blog-post h3 {
   text-transform: capitalize;
 }

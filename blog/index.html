@@ -5,9 +5,13 @@ layout: default
   <h1>Blog</h1>
   <div class="posts-wrapper">
     {% for post in site.posts %}
+      <div class="blog-post">
+
+      </div>
       <div class="blog-post text-area">
+        <img class="hero-blog" src="{{ post.postHero | relative_url }}" alt="">
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        {{ post.excerpt }}
+        {{ post.excerpt | split: "\n" | first }}
       </div>
     {% endfor %}
   </div>
