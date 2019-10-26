@@ -547,12 +547,12 @@ p,li {
 .blog-post ~ .blog-post {
  margin-top: 6em;
 }
-.blog-post .blog-hero {
+.blog-post .hero-blog {
  height: 40vh;
  width: 100%;
  margin-bottom: 3em;
- object-fit: cover;
- object-position: top;
+ object-fit: contain;
+ object-position: center;
  overflow: hidden;
 }
 .post-title {
