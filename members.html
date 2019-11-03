@@ -1,14 +1,13 @@
 ---
 layout: default
 title: Members
-published: false
 ---
 <!-- TODO: link to individual member's profile
            individual layout
            social link
            member's photo -->
 <div class="container members-container">
-  <h1>在籍している人々</h1>
+  <h1>Members</h1>
   <div class="members-wrapper">
     {% assign members = site.members | sort: 'number' %}
     {% for member in members limit:9 %}
@@ -29,5 +28,5 @@ published: false
     {% endfor %}
 
     </div>
-    <p>...and more!</p>
+    <p>You see other members on our Regular Class!</p>
   </div>
