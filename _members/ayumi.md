@@ -5,6 +5,7 @@ nickname: Ayu
 image_path: /images/photo/prof/ayumi2.jpg
 number: 2
 love: dancing
+published: false
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit
 
