@@ -4,6 +4,7 @@ layout: post
 author: yossie
 postHero: /images/photo/moon_kurayamizaka.jpg
 date: 2019-11-3
+published: false
 ---
 
 マチネの終わりにが公開になった。見たい。そうこうしているうちに屍人荘も予告編があがってて、こういう感じかー、原作とは違う路線でいくんだな、と思った。

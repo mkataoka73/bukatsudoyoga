@@ -41,7 +41,11 @@ layout: default
       </p>
       <p>日常の楽しみ方は無限です。BUKATSUDOは、みなさんの自由な「部活」の拠点でありたいと考えています。</p>
 
-        <a class="small-anchor bkd-link" href="http://bukatsu-do.jp/about/index.html">— Bukatsudo : Bukatsudo?</a></p>
+      <p>
+        <a class="small-anchor bkd-link"
+        href="http://bukatsu-do.jp/about/index.html">
+        — Bukatsudo : Bukatsudo?</a>
+      </p>
 
     </div>
     <div class="text-section message">
@@ -66,8 +70,11 @@ layout: default
       infinite: true,
       slidesToShow: 1,
       speed: 2000,
-      prevArrow: '<img src="{{ "/images/slick_icon/left-chevron.svg" | relative_url }}" class="slide-arrow prev-arrow">',
-      nextArrow: '<img src="{{ "/images/slick_icon/right-chevron.svg" | relative_url }}" class="slide-arrow next-arrow">'
+      prevArrow: '<img src="{{ "/images/slick_icon/left-chevron.svg" |
+      relative_url }}" class="slide-arrow prev-arrow">',
+      nextArrow: '<img src="{{ "/images/slick_icon/right-chevron.svg" |
+      relative_url }}" class="slide-arrow next-arrow">'
     });
+    $('.slider').slick('slickRemove', 1);
   });
 </script>
