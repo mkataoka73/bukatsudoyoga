@@ -1,0 +1,32 @@
+---
+layout: default
+title: Instructor
+---
+<!-- TODO: link to individual member's profile
+           individual layout
+           social link
+           member's photo -->
+<div class="container members-container">
+  <h1>Instructor</h1>
+  <div class="members-wrapper">
+    {% assign members = site.members | sort: 'number' %}
+    {% for member in members limit:9 %}
+      <div class="member-box">
+        <a href="{{ member.url | relative_url }}">
+          <img src="{{ member.image_path | relative_url }}" alt="{{ member.name }}">
+        </a>
+        {% if member.instructor == 1 %}
+          <h4 class="instructor">{{ member.name }}</h4>
+        {% else %}
+          <h4>{{ member.name }}</h4>
+        {% endif %}
+        <div class="member-copy">
+          {{ member.excerpt }}
+          Love: {{ member.love }}
+        </div>
+      </div>
+    {% endfor %}
+
+    </div>
+    <p>You see other members on our Regular Class!</p>
+  </div>
