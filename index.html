@@ -3,15 +3,7 @@ layout: default
 ---
 <div class="container home-container">
   <div class="home-section full-hero hero-home">
-    <div class="slider">
-      <div><img src="{{ "/images/photo/slide/class.jpg" | relative_url }}" alt=""></div>
-      <div><img src="{{ "/images/photo/slide/coffee_stand.jpg" | relative_url }}" alt=""></div>
-      <div><img src="{{ "/images/photo/slide/hall_with_mats.jpg" | relative_url }}" alt=""></div>
-      <div><img src="{{ "/images/photo/slide/kanaco-pose.jpg" | relative_url }}" alt=""></div>
-      <div><img src=" {{ "/images/photo/slide/the_dockyard.jpg" | relative_url }}" alt=""></div>
-      <div><img src=" {{ "/images/photo/slide/candle3.jpg" | relative_url }}" alt=""></div>
-    </div>
-    <div class="dots"></div>
+    {% include slider.html %}
     <div class="site-title">
       <h1 class="title-main">ヨガ部</h1>
       <h1 class="title-sub">Bukatsudo Yoga</h1>
@@ -59,7 +51,7 @@ layout: default
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="{{ "/js/slick.min.js" | relative_url }}"></script>
-<script type="text/javascript">
+<script>
   $(document).ready(function(){
     $('.slider').slick({
       appendDots: $('.dots'),
@@ -70,11 +62,8 @@ layout: default
       infinite: true,
       slidesToShow: 1,
       speed: 2000,
-      prevArrow: '<img src="{{ "/images/slick_icon/left-chevron.svg" |
-      relative_url }}" class="slide-arrow prev-arrow">',
-      nextArrow: '<img src="{{ "/images/slick_icon/right-chevron.svg" |
-      relative_url }}" class="slide-arrow next-arrow">'
-    });
-    $('.slider').slick('slickRemove', 1);
+      prevArrow: '<img src="{{ "/images/slick_icon/left-chevron.svg" | relative_url }}" class="slide-arrow prev-arrow">',
+      nextArrow: '<img src="{{ "/images/slick_icon/right-chevron.svg" | relative_url }}" class="slide-arrow next-arrow">',
   });
+});
 </script>
