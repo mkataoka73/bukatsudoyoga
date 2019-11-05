@@ -1,13 +1,14 @@
 /* GLOBAL STYLES */
 html, body {
   /* font-size: 10px; */
-  /* background-color: #faf8f0; */
+  background-color: #f8f8ff;
+  color: #111;
   margin: 0;
   padding: 0;
   letter-spacing: 0.05rem;
 }
 h1 {
-  color: #222;
+  /* color: #222; */
   font-weight: 200;
   letter-spacing: 0.2em;
   text-align: center;
@@ -69,7 +70,7 @@ p,li {
   background-size: cover;
   opacity: 0.5;
   filter: blur(4px);
-  background-position: center;
+  background-position: 50% 40%;
   background-repeat: no-repeat;
 }
 .hero h1 {
@@ -170,7 +171,7 @@ p,li {
   margin-right: 2.5em;
 }
 .nav-links a {
-  color: #000;
+  color: #111;
   text-decoration: none;
   transition: all 0.3s ease;
   position: relative;
@@ -336,7 +337,7 @@ p,li {
   text-decoration: none;
 }
 .news-list a {
-  color: #000;
+  color: #111;
   text-decoration: none;
   transition: all 0.5s ease;
 }
@@ -406,7 +407,7 @@ p,li {
   margin-top: 20px;
 }
 .about-container .coffee-ticket {
-  color: #333;
+  color: #111;
   font-size: 0.75em;
   margin-top: 0;
   margin-bottom: 30px;
@@ -643,7 +644,7 @@ p,li {
 
   /* HEADER STYLE */
   .header a {
-    color: #000;
+    /* color: #000; */
     font-size: 1em;
     padding: 0.5em;
     letter-spacing: 0.2em;
