@@ -27,6 +27,7 @@ a:hover {
 }
 p,li {
   font-size: 0.9rem;
+  line-height: 1.7;
 }
 .title {
   text-align: center;
@@ -465,6 +466,19 @@ p,li {
 .member-box .member-copy {
   text-align: center;
   font-size: 8px;
+}
+/* individual member page */
+.text-member {
+  width: 450px;
+}
+.text-member p {
+  line-height: 2;
+  margin: 4em auto;
+  text-align: justify;  // text-align をmoduleにしたい
+}
+.site-link {
+  display: inline-block;
+  margin-top: 20px;
 }
 
 /* EVENTS STYLES */
