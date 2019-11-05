@@ -10,7 +10,7 @@ times:
   - 22(日), 28(土)： 11:00~12:00
   - 20(金), 27(金)： 19:00~20:00
 type: yoga
-image_path: /images/photo/yoga_cliff.jpg
+image_path: /images/photo/slide/candle3.jpg
 place: 横浜美術館前広場
 official_url: https://compass.yafjp.org#andmore
 fees:
