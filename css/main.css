@@ -748,6 +748,9 @@ p,li {
     height: 100%;
     width: 100%;
   }
+  .site-title {
+    transform: translateX(-50%);
+  }
   .site-title .title-main {
     display: none;
     font-weight: 600;
