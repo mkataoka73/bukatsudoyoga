@@ -7,6 +7,8 @@ baseurl: "/bukatsudoyoga"
 future: true
 timezone: Asia/Tokyo
 
+google_analytics: UA-150948074-1
+
 collections:
    members:
      name:
