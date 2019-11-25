@@ -490,7 +490,7 @@ p,li {
 }
 /* individual member page */
 .text-member {
-  width: 40%;
+  width: 450px;
 }
 .text-member p {
   line-height: 2;
@@ -863,11 +863,6 @@ p,li {
     width: 28vw;
     height: 28vw;
   }
-  /* individual member page */
-  .text-member {
-    width: 60%;
-  }
-
 
   /* EVENT STYLES */
   .events-header {

@@ -13,8 +13,8 @@ title: Events
         <h2>Yoga Events</h2>
       </div>
       <div class="box-wrapper">
-        {% assign yoga_events = site.events | where: "type", "yoga" |
-                                              sort: 'date' | reverse %}
+        {% assign yoga_events = site.events
+          | where: "type", "yoga" | sort: 'date' | reverse %}
         {% for yoga_event in yoga_events limit:3 %}
           <div class="event-box">
             <!-- TODO: when hovered,

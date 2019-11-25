@@ -1,7 +1,7 @@
 <ul class="news-list">
   <!-- FIXME: font-size in mobile too small -->
   {% assign events = site.events | sort: 'dates' | reverse %}
-  {% for event in events %}
+  {% for event in events limit:5 %}
   <li>
     <a href="{{ event.url | relative_url }}">
       <span class="event-date">
