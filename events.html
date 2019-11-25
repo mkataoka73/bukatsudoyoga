@@ -35,28 +35,10 @@ title: Events
                 {% assign dates = yoga_event.dates %}
                 {% if dates.size == 1 %}
                   Date: {{ dates[0] | date: "%-m/%-d " }}
-                  {% assign day = dates[0] | date: "%w" %}
-                  {% case day %}
-                    {% when '0' %}(日)
-                    {% when '1' %}(月)
-                    {% when '2' %}(火)
-                    {% when '3' %}(水)
-                    {% when '4' %}(木)
-                    {% when '5' %}(金)
-                    {% when '6' %}(土)
-                {% endcase %}
+                   {% include day.html %}
                 {% else %}
                   Date: {{ dates[0] | date: "%-m/%-d " }}
-                  {% assign day = dates[0] | date: "%w" %}
-                  {% case day %}
-                    {% when '0' %}(日)
-                    {% when '1' %}(月)
-                    {% when '2' %}(火)
-                    {% when '3' %}(水)
-                    {% when '4' %}(木)
-                    {% when '5' %}(金)
-                    {% when '6' %}(土)
-                  {% endcase %}
+                  {% include day.html %}
                   <span style="font-size: 0.8em">ほか</span>
                 {% endif %}
                 <!-- {{ yoga_event.times[0] }} -->

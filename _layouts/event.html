@@ -6,7 +6,7 @@ layout: default
     <div class="bg" style="background-image: url( {{ page.image_path | relative_url }})"></div>
     <h1>{{ page.title }}</h1>
   </div>
-  <div class="text-area text-event">
+  <div class="text-area text-event text-justify">
     <div class="description">
       <h2>About</h2>
       {{ page.content }}
@@ -16,17 +16,7 @@ layout: default
         <h2>Date & Time</h2>
         <p>
           {% for date in page.dates %}
-            {{ date | date: "%-m/%-d " }}
-            {% assign d = date | date:"%w"  %}
-            {% case d %}
-              {% when '0' %}(日)
-              {% when '1' %}(月)
-              {% when '2' %}(火)
-              {% when '3' %}(水)
-              {% when '4' %}(木)
-              {% when '5' %}(金)
-              {% when '6' %}(土)
-            {% endcase %}
+            {{ date | date: "%-m/%-d " }}{% include day.html %}
             <br>
           {% endfor %}
         </p>
