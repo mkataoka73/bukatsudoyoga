@@ -16,7 +16,8 @@ layout: default
         <h2>Date & Time</h2>
         <p>
           {% for date in page.dates %}
-            {{ date | date: "%-m/%-d " }}{% include day.html %}
+            {{ date | date: "%-m/%-d " }}
+            {% include day.html %}
             <br>
           {% endfor %}
         </p>

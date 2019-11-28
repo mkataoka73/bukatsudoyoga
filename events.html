@@ -34,6 +34,8 @@ title: Events
               <p class="date">
                 {% assign dates = yoga_event.dates %}
                 {% if dates.size == 1 %}
+                <!-- TODO: 変数の値をちゃんとする -->
+                {% assign date = yoga_event.dates[0] %}
                   Date: {{ dates[0] | date: "%-m/%-d " }}
                    {% include day.html %}
                 {% else %}

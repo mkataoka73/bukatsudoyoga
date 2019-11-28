@@ -1,6 +1,6 @@
 ---
 layout: event
-title: ヨガとランチを楽しむ週末
+title: ヨガとランチを楽しむ週末 vol.3
 subtitle: Tinys Yoga & Lunch vol.3
 news-head: Wellness Yoga & Lunch vol.3 を開催します
 dates:
@@ -8,14 +8,13 @@ dates:
 times:
   - 11:00 ~ 12:00 Yoga Time
   - 12:15 ~ 13:30 Lunch Time
-image_path: /images/event_icon/picnic.svg
+image_path: /images/event/tinys1.png
 type: yoga
 place: Tinys Hinodecho
 fees: ¥2,500
 official_url: http://tinys.life/yokohama/culture/2915/
 ---
 週末のお昼にちょっと体に良い事しませんか？
-
 テーマは、WELLNESS YOGA & LUNCH ～ヨガとランチを楽しむ週末～
 という事で、Tinysのランチ付きのヨガイベントとなります！
 
