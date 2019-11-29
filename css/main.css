@@ -587,19 +587,20 @@ p,li {
   cursor: pointer;
 }
 .gallery-thumbs img {
-  width: 180px;
+  width: 90%;
   height: 120px;
   border: 1px solid #aaa;
-  padding: 20px;
   margin: 20px auto;
   box-sizing: border-box;
   display: block;
+  object-fit: cover;
+  object-position: top;
 }
 .col-content {
   padding: 50px;
 }
 .col-content img {
-  width: 500px;
+  width: 100%;
   display: block;
   border: 1px solid #aaa;
 }
