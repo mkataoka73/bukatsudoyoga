@@ -2,7 +2,7 @@
 layout: event
 title: ヨガとランチを楽しむ週末 vol.3
 subtitle: Tinys Yoga & Lunch vol.3
-news-head: Wellness Yoga & Lunch vol.3 を開催します
+news-head: Tinysでのイベント3回目を開催しました！
 dates:
   - 2019-11-17
 times:
