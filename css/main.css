@@ -351,6 +351,11 @@ p,li {
   font-size: 0.8em;
   line-height: 1.8;
 }
+.news-list .tag {
+  display: inline-block;
+  margin: 10px 10px;
+  background-color: orange;
+}
 .news-list {
   line-height: 2;
   list-style: none;

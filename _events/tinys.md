@@ -13,6 +13,7 @@ type: yoga
 place: Tinys Hinodecho
 fees: ¥2,500
 official_url: http://tinys.life/yokohama/culture/2915/
+published: false
 ---
 週末のお昼にちょっと体に良い事しませんか？
 テーマは、WELLNESS YOGA & LUNCH ～ヨガとランチを楽しむ週末～
