@@ -2,11 +2,11 @@
   <!-- FIXME: font-size in mobile too small -->
   {% assign events = site.events | sort: 'dates' | reverse %}
   {% for event in events limit:5 %}
+  {% assign date = event.dates[0] %}
   <li>
     <a href="{{ event.url | relative_url }}">
       <span class="event-date">
         <span class="date">{{ event.dates[0] | date: "%-m/%d" }}</span>
-        {% assign d = event.dates[0] | date: "%w" %}
         <span class="day">
           {% include day.html %}
         </span>
