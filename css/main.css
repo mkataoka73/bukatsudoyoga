@@ -409,19 +409,6 @@ p,li {
   width: 80%;
   margin: auto;
 }
-.text-about {
-  text-align: left;
-}
-.text-about h2 {
-  border-left: 5px solid #73a9ff;
-  /* display: block; */
-  /* font-family: 'Open Sans', sans-serif; */
-  /* letter-spacing: 0.1em; */
-  /* margin: 10px 25px; */
-  /* padding: 0.7vh; */
-  padding-left: 15px;
-  /* width: 27%; */
-}
 .text-about h2 ~ h2{
   margin-top: 90px;
 }
