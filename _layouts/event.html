@@ -8,12 +8,12 @@ layout: default
   </div>
   <div class="text-area text-event text-justify">
     <div class="description">
-      <h2>About</h2>
+      <h2 class="heading">About</h2>
       {{ page.content }}
     </div>
     <div class="details">
       <div class="date">
-        <h2>Date & Time</h2>
+        <h2 class="heading">Date & Time</h2>
         <p>
           {% for date in page.dates %}
             {{ date | date: "%-m/%-d " }}
@@ -28,12 +28,12 @@ layout: default
         </p>
       </div>
       <div class="place">
-        <h2>Place</h2>
+        <h2 class="heading">Place</h2>
         <p>{{ page.place }}</p>
       </div>
       {% if page.type == "yoga" %}
         <div class="fee">
-          <h2>Fee</h2>
+          <h2 class="heading">Fee</h2>
           <p>
             {% for fee in page.fees %}
               {{ fee }}
