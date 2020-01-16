@@ -409,6 +409,9 @@ p,li {
   width: 80%;
   margin: auto;
 }
+.text-about {
+  width: 40%;
+}
 .text-about h2 ~ h2{
   margin-top: 90px;
 }
@@ -422,6 +425,9 @@ p,li {
 }
 .text-about .small-text {
   font-size: 0.5em;
+}
+.notice p {
+  text-align: justify;
 }
 
 /* MEMBERS STYLES */
@@ -848,6 +854,9 @@ p,li {
   /* ABOUT STYLES */
   .about-container {
     margin: auto;
+  }
+  .text-about {
+    width: 80%;
   }
   .text-about h1 {
     font-size: 1.5em;
