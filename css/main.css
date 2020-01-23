@@ -427,7 +427,7 @@ p,li {
   font-size: 0.5em;
 }
 .notice p {
-  text-align: justify;
+  text-align: left;
 }
 
 /* MEMBERS STYLES */
