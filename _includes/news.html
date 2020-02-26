@@ -1,23 +1,26 @@
-<ul class="news-list">
-  <!-- FIXME: font-size in mobile too small -->
-  {% assign events = site.events | sort: 'dates' | reverse %}
-  {% for event in events limit:5 %}
-  {% assign date = event.dates[0] %}
-  <li>
-    <a href="{{ event.url | relative_url }}">
-      <span class="event-date">
-        <span class="date">{{ event.dates[0] | date: "%-m/%d" }}</span>
-        <span class="day">
-          {% include day.html %}
-        </span>
-      </span>
+{% assign newses = "" | split: "|" %}
+{% for event in site.events %}
+  {% assign newses = newses | push: event %}
+{% endfor %}
+{% for post in site.posts %}
+  {% if post.categories contains 'info' %}
+    {% assign newses = newses | push: post | sort: 'date'%}
+  {% endif %}
+{% endfor %}
 
-      {% if event.news-head %}
-        <span class="event-title">{{ event.news-head }}</span>
-      {% else %}
-        <span class="event-title">{{ event.title }}</span>
-      {% endif %}
-    </a>
-  </li>
+{% assign newses = newses | reverse | limit: 5 %}
+<ul class="news-list">
+  {% for news in newses %}
+    <li>
+      <a href="{{ news.url | relative_url }}">
+        <span class="event-date">
+          <span class="date">{{ news.date | date: "%Y/%-m/%d"}}</span>
+          <span class="day">
+            {% include day.html %}
+          </span>
+        </span>
+        <span class="event-title">{{ news.title }}</span>
+      </a>
+    </li>
   {% endfor %}
 </ul>

@@ -2,6 +2,7 @@
 title: レッスンお休みのお知らせ
 layout: post
 author: yossie
+categories: [info]
 postHero: /images/lotus.svg
 ---
 

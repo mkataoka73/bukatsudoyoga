@@ -2,6 +2,7 @@
 layout: event
 title: シヴァーナンダヨガの太陽礼拝をやってみよう
 news-head: 夜ヨガにスペシャルゲスト！
+date: 2019-10-30
 dates:
   - 2019-10-30
 times:
