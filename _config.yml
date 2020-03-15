@@ -9,6 +9,9 @@ timezone: Asia/Tokyo
 
 google_analytics: UA-150948074-1
 
+sass:
+  style: expanded
+
 collections:
    members:
      name:
