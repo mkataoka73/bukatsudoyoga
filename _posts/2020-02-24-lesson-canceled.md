@@ -3,6 +3,7 @@ title: レッスンお休みのお知らせ
 layout: post
 author: yossie
 categories: [info]
+permalink: /posts/lesson-canceled
 postHero: /images/lotus.svg
 ---
 
