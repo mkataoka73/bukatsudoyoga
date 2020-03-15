@@ -1,0 +1,12 @@
+GEM
+  specs:
+    kramdown (2.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  kramdown
+
+BUNDLED WITH
+   2.0.2
