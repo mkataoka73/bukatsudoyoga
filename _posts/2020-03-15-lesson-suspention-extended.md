@@ -7,6 +7,7 @@ permalink: /bukatsudoyoga/posts/lesson-suspention-extended
 postHero: /images/pause-pendulum.jpg
 img_author: Sober Rabbit
 img_url: https://flic.kr/p/T2YMq3
+published: false
 ---
 
 
