@@ -2,7 +2,15 @@
 layout: default
 ---
 <div class="blog-post">
-  <img class="hero-blog" src="{{ page.postHero | relative_url  }}" alt="{{ page.title }}">
+  <div class="post-hero">
+    <div class="hero-blog">
+      <img src="{{ page.postHero | relative_url  }}" alt="{{ page.title }}">
+    </div>
+    {% if page.img_author %}
+      <span class="img-author">photo by <a href="{{ page.img_url }}">{{ page.img_author }}</a></span>
+    {% endif %}
+  </div>
+
   <div class="text-area">
     <h1 class="post-title">{{ page.title }}</h1>
     {% assign icon_list = site.collections[1].icon %}
