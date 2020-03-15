@@ -571,6 +571,11 @@ p, li {
   margin: auto; }
   .blog-post img.image-large {
     width: 100%; }
+.blog-post blockquote {
+  color: #444;
+  border: 2px solid #eee;
+  padding: 30px;
+  border-radius: 10px; }
 
 .caption {
   text-align: center;

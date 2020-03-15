@@ -786,6 +786,13 @@ p, li {
       width: 100%;
     }
   }
+
+  blockquote {
+    color: #444;
+    border: 2px solid #eee;
+    padding: 30px;
+    border-radius: 10px;
+  }
 }
 
 .caption {
