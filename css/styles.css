@@ -544,17 +544,23 @@ p, li {
 
 .blog-post ~ .blog-post {
   margin-top: 6em; }
-.blog-post .hero-blog {
-  height: 40vh;
-  width: 100%;
-  margin-bottom: 3em;
-  object-fit: contain;
-  object-position: center;
-  overflow: hidden; }
 
 .post-title {
   letter-spacing: 0.1em; }
 
+.blog-post .hero-blog {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  overflow: hidden; }
+.blog-post .post-hero {
+  width: 50%;
+  margin: auto;
+  text-align: right; }
+  .blog-post .post-hero img {
+    width: 100%; }
+  .blog-post .post-hero .img-author {
+    font-size: 10px; }
 .blog-post h2 {
   text-transform: capitalize; }
 .blog-post h3 {
@@ -565,16 +571,12 @@ p, li {
   /* width: 70%; */
   /* max-width: 600px; */
   text-align: justify; }
-.blog-post img {
-  width: 70%;
-  display: block;
-  margin: auto; }
-  .blog-post img.image-large {
-    width: 100%; }
+.blog-post img.image-large {
+  width: 100%; }
 .blog-post blockquote {
   color: #444;
   border: 2px solid #eee;
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px; }
 
 .caption {
@@ -606,6 +608,7 @@ p, li {
   width: 32px;
   vertical-align: text-bottom; }
 
+/* media queries */
 @media (max-width: 800px) {
   /* EVENTS STYLES */
   /* individual event page */
