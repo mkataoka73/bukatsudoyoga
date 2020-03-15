@@ -3,7 +3,7 @@ title: お休み期間延長のお知らせ
 layout: post
 author: yossie
 categories: [info]
-permalink: /bukatsudoyoga/posts/lesson-suspention-extended
+permalink: /posts/lesson-suspention-extended
 postHero: /images/pause-pendulum.jpg
 img_author: Sober Rabbit
 img_url: https://flic.kr/p/T2YMq3
@@ -12,7 +12,7 @@ img_url: https://flic.kr/p/T2YMq3
 
 いつもBukatsudo Yoga部をご利用のみなさま、ありがとうございます。
 
-[先日の記事]({% post_url 2020-02-24-lesson-canceled | relative_url %})で、レッスンの再開を3/25とお知らせしましたが、状況の変化を鑑み、**レッスン休止の期間を3月末まで延長することといたしました**。
+[先日の記事]({% post_url 2020-02-24-lesson-canceled %})で、レッスンの再開を3/25とお知らせしましたが、状況の変化を鑑み、**レッスン休止の期間を3月末まで延長することといたしました**。
 
 したがいまして、3/25のレッスンもおやすみとさせていただきます。楽しみにされていた皆様、申し訳ございません。
 
