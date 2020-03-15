@@ -827,7 +827,17 @@ p, li {
   /* Individual event page */
   .hero h1 {
     font-size: 5vw;
-    transform: translateY(-100%); } }
+    transform: translateY(-100%); }
+
+  /*  BLOG STYLES */
+  /* Individual blog page */
+  .blog-post .post-hero {
+    width: 100%; }
+    .blog-post .post-hero .img-author {
+      margin-right: 10px; }
+  .blog-post blockquote {
+    width: 80%;
+    margin: auto; } }
 @media (max-width: 500px) {
   /* HOMEPAGE STYLES */
   .slider img {

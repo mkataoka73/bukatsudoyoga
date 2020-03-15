@@ -1156,6 +1156,26 @@ p, li {
     font-size: 5vw;
     transform: translateY(-100%);
   }
+
+  /*  BLOG STYLES */
+
+  /* Individual blog page */
+
+  .blog-post {
+
+    .post-hero {
+      width: 100%;
+
+      .img-author {
+        margin-right: 10px;
+      }
+    }
+
+    blockquote {
+    width: 80%;
+    margin: auto;
+    }
+  }
 }
 
 @media (max-width: 500px) {
