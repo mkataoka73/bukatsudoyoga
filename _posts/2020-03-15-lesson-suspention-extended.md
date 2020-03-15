@@ -3,7 +3,6 @@ title: お休み期間延長のお知らせ
 layout: post
 author: yossie
 categories: [info]
-permalink: /posts/lesson-suspention-extended
 postHero: /images/pause-pendulum.jpg
 img_author: Sober Rabbit
 img_url: https://flic.kr/p/T2YMq3
