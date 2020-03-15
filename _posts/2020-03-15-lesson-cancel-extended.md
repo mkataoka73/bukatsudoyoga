@@ -1,12 +1,13 @@
 ---
-title: レッスン休止期間延期のお知らせ
+title: お休み期間延長のお知らせ
 layout: post
 author: yossie
 categories: [info]
-postHero: /images/lotus.svg
+postHero: /images/pause-pendulum.jpg
+img_author: Sober Rabbit
+img_url: https://flic.kr/p/T2YMq3
 ---
 
-### 3月末までレッスンをお休みといたします
 
 いつもBukatsudo Yoga部をご利用のみなさま、ありがとうございます。
 
@@ -22,8 +23,9 @@ postHero: /images/lotus.svg
 
 スタジオでのレッスンがお休みの間、[instagramアカウント](https://www.instagram.com/bukatsudoyogabu/)にて、インストラクターとして活躍されている方の動画をシェアする活動をはじめました。ヨガ部のインスタアカウントをぜひチェックしてみてください。
 
-[企画趣旨の書かれた投稿](https://www.instagram.com/p/B9lfl2dhOHg/c/17846220067992721/)から抜粋です。
+[企画趣旨の書かれた投稿][post_link]から抜粋です。
 
+[post_link]: https://www.instagram.com/p/B9lfl2dhOHg/c/17846220067992721/
 
 > 毎月2回開催中のヨガ部。
 >今夜の開催はお休みのため、皆さまをお迎えできず残念です。
@@ -44,6 +46,6 @@ postHero: /images/lotus.svg
 >皆さまどうぞよろしくお願い致します！
 >
 >
-><span class="caption">[投稿](https://www.instagram.com/p/B9lfl2dhOHg/c/17846220067992721/)より</span>
+><span class="caption">[投稿][post_link]より</span>
 
 またスタジオで皆さんにお会いできる日を待ち遠しく思っています。どうぞお身体を大事に、よき日々をお過ごしください。
