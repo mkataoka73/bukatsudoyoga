@@ -565,9 +565,9 @@ p, li {
   text-transform: capitalize; }
 .blog-post h3 {
   text-transform: capitalize;
-  margin-bottom: 2em; }
+  margin: 2em auto; }
 .blog-post p {
-  margin: 0 auto 25px;
+  margin: 15px auto 25px;
   /* width: 70%; */
   /* max-width: 600px; */
   text-align: justify; }
@@ -581,7 +581,7 @@ p, li {
 
 .caption {
   text-align: center;
-  font-size: 0.75em;
+  font-size: 0.9em;
   font-style: italic;
   font-weight: normal;
   margin-top: 1em;
