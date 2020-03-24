@@ -3,7 +3,7 @@ title: 3/25レッスンお休みのお知らせ
 layout: post
 author: yossie
 categories: [info]
-permalink: /bukatsudoyoga/posts/march-25-lesson-canceled
+permalink: /posts/march-25-lesson-canceled
 postHero: /images/pause-pendulum.jpg
 img_author: Sober Rabbit
 img_url: https://flic.kr/p/T2YMq3
