@@ -84,7 +84,7 @@ p, li {
     background-size: cover;
     opacity: 0.5;
     filter: blur(4px);
-    background-position: 50% 40%;
+    background-position: 50% 70%;
     background-repeat: no-repeat; }
   .hero h1 {
     color: #fff;
@@ -565,7 +565,7 @@ p, li {
   text-transform: capitalize; }
 .blog-post h3 {
   text-transform: capitalize;
-  margin: 2em auto; }
+  margin: 2em; }
 .blog-post p {
   margin: 15px auto 25px;
   /* width: 70%; */

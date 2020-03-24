@@ -21,9 +21,14 @@
       </a>
     </li>
     {% endif %}
+    {% if page.websites %}
+      {% for website in page.websites %}
+        <li>
+          <a href="{{ website.url }}" class="social-link">
+            <i class="fas fa-globe"></i>
+          </a>
+        </li>
+      {% endfor %}
+    {% endif %}
   </ul>
 </div>
-{% if page.official_url %}
-  <!-- FIXME: margin-top -->
-  <a class="small-anchor site-link" href="{{ page.official_url }}">Official Site:  {{ page.official_site_name }}</a>
-{% endif %}

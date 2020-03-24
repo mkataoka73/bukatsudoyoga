@@ -6,6 +6,13 @@ instructor: 1
 number: 1
 love: foods, her lovely child
 instagram: https://www.instagram.com/kanaconomori/
+websites:
+  - personal:
+    name: personal
+    url:  http://kanaco.otonomori2012.com/
+  - otonomori:
+    name: otonomori
+    url:  http://www.otonomori2012.com/
 official_url: http://www.otonomori2012.com/
 official_site_name: Otonomori
 ---
