@@ -372,10 +372,23 @@ p, li {
     display: block;
     margin-top: 20px; }
   .text-about .small-text {
-    font-size: 0.5em; }
+    font-size: 0.8em; }
 
 .notice p {
   text-align: left; }
+
+.notice__important {
+  margin-top: 30px;
+  border: 1px solid #d97e7e;
+  border-radius: 7px;
+  box-sizing: border-box;
+  padding: 10px 40px 20px;
+  background-color: #edccc5;
+  color: black; }
+  .notice__important h3 {
+    color: #BD1900;
+    font-weight: bold;
+    font-size: 1.05em; }
 
 /* MEMBERS STYLES */
 .members-container {
