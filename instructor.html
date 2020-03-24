@@ -22,7 +22,9 @@ title: Instructor
         {% endif %}
         <div class="member-copy">
           {{ member.excerpt }}
-          Love: {{ member.love }}
+          <p>
+            <a href="{{ member.url | relative_url }}">Read more >></a>
+          </p>
         </div>
       </div>
     {% endfor %}

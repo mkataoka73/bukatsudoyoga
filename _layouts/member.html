@@ -19,35 +19,7 @@ layout: default
     </div>
     <div class="link">
       <h2 class="heading">Links</h2>
-      <div class="social-links">
-        <ul class="social-list">
-          {% if page.facebook %}
-          <li>
-            <a href="https://example.com/" class="social-link">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          {% endif %}
-          {% if page.twitter %}
-          <li>
-            <a href="https://example.com/" class="social-link">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          {% endif %}
-          {% if page.instagram %}
-          <li>
-            <a href="{{ page.instagram }}" class="social-link">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-      {% if page.official_url %}
-        <!-- FIXME: margin-top -->
-        <a class="small-anchor site-link" href="{{ page.official_url }}">Official Site:  {{ page.official_site_name }}</a>
-      {% endif %}
+      {% include social-links.html %}
     </div>
   </div>
 </div>
