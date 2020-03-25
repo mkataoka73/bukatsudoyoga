@@ -1,4 +1,6 @@
 /* GLOBAL STYLES */
+$light-blue: #6397b5;
+$dark-brown: #3B241F;
 
 html, body {
   /* font-size: 10px; */
@@ -22,7 +24,7 @@ h2, h3, h4 {
 }
 
 a {
-  color: #6397b5;
+  color: $light-blue;
   text-decoration-color: rgba(99, 151, 181, 0.1);
   transition: text-decoration-color 0.3s ease;
 
@@ -435,7 +437,7 @@ p, li {
     transition: all 0.5s ease;
 
     &:hover {
-      color: #6397b5;
+      color: $light-blue;
     }
   }
 
@@ -518,12 +520,16 @@ p, li {
   box-sizing: border-box;
   padding: 10px 40px 20px;
   background-color: #edccc5;
-  color: black;
+  color: $dark-brown;
 
   h3 {
     color: #BD1900;
     font-weight: bold;
     font-size: 1.05em;
+  }
+
+  a {
+    color:  $light-blue;
   }
 }
 
