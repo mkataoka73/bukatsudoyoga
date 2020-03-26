@@ -10,11 +10,6 @@ websites:
   - personal:
     name: personal
     url:  http://kanaco.otonomori2012.com/
-  - otonomori:
-    name: otonomori
-    url:  http://www.otonomori2012.com/
-official_url: http://www.otonomori2012.com/
-official_site_name: Otonomori
 ---
 <!-- TODO: update description -->
 Wellness Lifeをテーマとした場所づくりとして2012年、otonomoriを立ち上げる。

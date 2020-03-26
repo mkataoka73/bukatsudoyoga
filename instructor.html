@@ -23,6 +23,40 @@ title: Instructor
         <div class="member-copy">
           {{ member.excerpt }}
         </div>
+        <div class="member-social">
+          <ul class="social-list">
+            {% if member.facebook %}
+            <li>
+              <a href="{{ member.facebook }}" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            {% endif %}
+            {% if member.twitter %}
+            <li>
+              <a href="{{ member.twitter }}" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            {% endif %}
+            {% if member.instagram %}
+            <li>
+              <a href="{{ member.instagram }}" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            {% endif %}
+            {% if member.websites %}
+              {% for website in member.websites %}
+                <li>
+                  <a href="{{ website.url }}" class="social-link">
+                    <i class="fas fa-globe"></i>
+                  </a>
+                </li>
+              {% endfor %}
+            {% endif %}
+          </ul>
+        </div>
         <p>
           <a href="{{ member.url | relative_url }}">Read more >></a>
         </p>
