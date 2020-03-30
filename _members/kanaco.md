@@ -1,7 +1,7 @@
 ---
 layout: member
 name: Kanaco
-image_path: /images/photo/prof/kanaco3.jpg
+image_path: /images/kanaco/pigeon.jpg
 instructor: 1
 number: 1
 love: foods, her lovely child
