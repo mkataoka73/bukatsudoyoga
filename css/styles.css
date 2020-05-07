@@ -68,7 +68,7 @@ p, li {
   height: 30vh;
   width: 100%;
   overflow: hidden;
-  margin: auto; }
+  margin: 0 auto 30px; }
 
 .hero {
   background-color: #222;
