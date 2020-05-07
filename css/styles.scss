@@ -103,7 +103,7 @@ p, li {
     background-size: cover;
     opacity: 0.5;
     filter: blur(4px);
-    background-position: 50% 70%;
+    background-position: 50% 40%;
     background-repeat: no-repeat;
   }
 
@@ -572,6 +572,7 @@ p, li {
     height: 160px;
     width: 160px;
     object-fit: cover;
+    object-position: 20%;
   }
 
   h4 {
@@ -897,6 +898,15 @@ p, li {
     display: inline-block;
   }
 
+  /* Collections */
+
+  .hero {
+    .bg {
+      background-position: 50% 30%;
+    }
+  }
+
+
   /* HEADER STYLES */
 
   .header {
@@ -1108,12 +1118,16 @@ p, li {
   /* MEMBER STYLES */
 
   .member-box {
+    width: 90%;
     margin-bottom: 1.5em;
+    max-width: none;
 
     img {
       object-fit: cover;
-      width: 28vw;
-      height: 28vw;
+      width: 100%;
+      height: 30vh;
+      border-radius: 7px;
+      object-position: 50% 10%;
     }
   }
 

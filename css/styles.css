@@ -84,7 +84,7 @@ p, li {
     background-size: cover;
     opacity: 0.5;
     filter: blur(4px);
-    background-position: 50% 70%;
+    background-position: 50% 40%;
     background-repeat: no-repeat; }
   .hero h1 {
     color: #fff;
@@ -423,7 +423,8 @@ p, li {
     margin: 0 auto;
     height: 160px;
     width: 160px;
-    object-fit: cover; }
+    object-fit: cover;
+    object-position: 20%; }
   .member-box h4 {
     font-size: 0.7em;
     font-weight: bold;
@@ -644,6 +645,10 @@ p, li {
     position: relative;
     display: inline-block; }
 
+  /* Collections */
+  .hero .bg {
+    background-position: 50% 30%; }
+
   /* HEADER STYLES */
   .header {
     height: 12vh; }
@@ -793,11 +798,15 @@ p, li {
 
   /* MEMBER STYLES */
   .member-box {
-    margin-bottom: 1.5em; }
+    width: 90%;
+    margin-bottom: 1.5em;
+    max-width: none; }
     .member-box img {
       object-fit: cover;
-      width: 28vw;
-      height: 28vw; }
+      width: 100%;
+      height: 30vh;
+      border-radius: 7px;
+      object-position: 50% 10%; }
 
   /* INNDIVIDUAL MEMBER PAGE */
   .text-member {
