@@ -5,6 +5,10 @@ image_path: /images/kanae/1.jpg
 instructor: 1
 number: 1
 instagram: https://www.instagram.com/kanaeoba_work/
+websites:
+  - personal:
+    name: personal
+    url:  http://www.JIKUTRE.com
 ---
 音楽活動とOLの二足わらじで、
 多忙極めて自律神経失調＋重度の腰痛を
