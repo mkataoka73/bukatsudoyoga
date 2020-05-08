@@ -1,7 +1,7 @@
 ---
 layout: member
 name: Maki
-image_path: /images/maki/2-2.jpg
+image_path: /assets/images/maki/2-2.jpg
 instructor: 1
 number: 1
 instagram: https://www.instagram.com/yachinpaaa/

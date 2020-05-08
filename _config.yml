@@ -19,7 +19,7 @@ collections:
        kanako: kanako
      icon:
        yossie: /bukatsudoyoga/images/photo/prof/mkataoka.jpg
-       kanaco: /bukatsudoyoga/images/photo/prof/kanaco3.jpg
+       kanaco: /bukatsudoyoga/assets/images/photo/prof/1.jpg
      output: true
    events:
      output: true

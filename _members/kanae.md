@@ -1,7 +1,7 @@
 ---
 layout: member
 name: Kanae
-image_path: /images/kanae/2.jpg
+image_path: /assets/images/kanae/2.jpg
 instructor: 1
 number: 1
 instagram: https://www.instagram.com/kanaeoba_work/
