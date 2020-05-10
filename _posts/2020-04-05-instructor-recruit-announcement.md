@@ -4,7 +4,7 @@ layout: post
 author: yossie
 categories: [info]
 permalink: /instructors-wanted
-postHero: /images/instructors-wanted.jpg
+postHero: /assets/images/instructors-wanted.jpg
 ---
 BUKATSUDO YOGA 部は、活動を開始してから約4年が経過しました。
 

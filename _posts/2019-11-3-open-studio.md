@@ -2,7 +2,7 @@
 title: OPEN STUDIO
 layout: post
 author: yossie
-postHero: /images/photo/moon_kurayamizaka.jpg
+postHero: /assets/images/photo/moon_kurayamizaka.jpg
 date: 2019-11-3
 published: false
 ---

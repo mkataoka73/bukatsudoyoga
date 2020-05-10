@@ -4,7 +4,7 @@ layout: post
 author: yossie
 categories: [info]
 permalink: /march-25-lesson-canceled
-postHero: /images/pause-pendulum.jpg
+postHero: /assets/images/pause-pendulum.jpg
 img_author: Sober Rabbit
 img_url: https://flic.kr/p/T2YMq3
 ---

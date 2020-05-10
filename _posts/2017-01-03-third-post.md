@@ -2,7 +2,7 @@
 title: 10月23日 夜ヨガのこと
 layout: post
 author: yossie
-postHero: /images/woman-stretching-her-body-on-the-floor.svg
+postHero: /assets/images/woman-stretching-her-body-on-the-floor.svg
 date: 2019-10-25
 ---
 

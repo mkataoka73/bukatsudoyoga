@@ -7,7 +7,7 @@ dates:
   - 2019-10-30
 times:
   - 19:30〜20:45 (75min)
-image_path: /images/event/shivananda.jpg
+image_path: /assets/images/event/shivananda.jpg
 type: yoga
 place: Bukatsudo
 fees: ¥2,500

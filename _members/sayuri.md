@@ -1,7 +1,7 @@
 ---
 layout: member
 name: Sayuri
-image_path: /images/photo/prof/sayuri.jpg
+image_path: /assets/images/photo/prof/sayuri.jpg
 number: 4
 love: ashtanga yoga
 published: false

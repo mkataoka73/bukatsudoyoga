@@ -1,7 +1,7 @@
 ---
 layout: event
 title: コンパスヨコハマ 2019
-date: 2019-09-20 
+date: 2019-09-20
 dates:
  - 2019-09-20
  - 2019-09-22
@@ -11,7 +11,7 @@ times:
   - 22(日), 28(土)： 11:00~12:00
   - 20(金), 27(金)： 19:00~20:00
 type: yoga
-image_path: /images/photo/slide/candle3.jpg
+image_path: /assets/images/photo/slide/candle3.jpg
 place: 横浜美術館前広場
 official_url: https://compass.yafjp.org#andmore
 fees:

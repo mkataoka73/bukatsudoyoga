@@ -1,7 +1,7 @@
 ---
 layout: member
 name: Yossie
-image_path: /images/photo/prof/mkataoka-color.jpg
+image_path: /assets/images/photo/prof/mkataoka-color.jpg
 number: 99
 love: beers, internet
 instagram: url

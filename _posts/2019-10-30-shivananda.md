@@ -2,7 +2,7 @@
 title: 太陽礼拝 in シヴァナンダヨガ
 layout: post
 author: yossie
-postHero: /images/event/shivananda.jpg
+postHero: /assets/images/event/shivananda.jpg
 date: 2019-10-30
 ---
 

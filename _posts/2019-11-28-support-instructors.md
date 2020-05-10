@@ -2,7 +2,7 @@
 title: インストラクター応援キャンペーン
 layout: post
 author: yossie
-postHero: /images/photo/support-instructors.jpg
+postHero: /assets/images/photo/support-instructors.jpg
 date: 2019-11-28
 ---
 ## New Campaign Started!

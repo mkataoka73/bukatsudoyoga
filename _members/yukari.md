@@ -1,7 +1,7 @@
 ---
 layout: member
 name: Yukari Deme
-image_path: /images/photo/prof/yukari.jpg
+image_path: /assets/images/photo/prof/yukari.jpg
 number: 5
 love: Demekin
 published: false

@@ -1,7 +1,7 @@
 ---
 layout: member
 name: Mizuno Papa
-image_path: /images/photo/prof/mizuno2.jpg
+image_path: /assets/images/photo/prof/mizuno2.jpg
 number: 6
 love: Moff-moffy things
 published: false

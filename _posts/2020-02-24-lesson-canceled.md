@@ -4,7 +4,7 @@ layout: post
 author: yossie
 categories: [info]
 permalink: /bukatsudoyoga/posts/lesson-canceled
-postHero: /images/lotus.svg
+postHero: /assets/images/lotus.svg
 ---
 
 いつもBukatsudo Yoga部をご利用のみなさま、ありがとうございます。

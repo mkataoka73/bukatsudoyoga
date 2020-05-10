@@ -1,7 +1,7 @@
 ---
 layout: member
 name: Megumi
-image_path: /images/prof_icon/stretch_forward.svg
+image_path: /assets/images/prof_icon/stretch_forward.svg
 number: 8
 love: ???
 published: false

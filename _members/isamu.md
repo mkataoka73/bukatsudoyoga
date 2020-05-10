@@ -1,7 +1,7 @@
 ---
 layout: member
 name: Isamu
-image_path: /images/photo/prof/isamu2.jpg
+image_path: /assets/images/photo/prof/isamu2.jpg
 number: 7
 love: dogs, mountains
 published: false
