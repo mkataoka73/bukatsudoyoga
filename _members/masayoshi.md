@@ -2,7 +2,7 @@
 layout: member
 name: Masayoshi Kataoka
 membership: Member, サイト管理
-image_path: /assets/images/photo/prof/mkataoka-color.jpg
+image_path: /assets/images/photo/prof/mkataoka.jpg
 number: 99
 instagram: https://www.instagram.com/mkataoka73/
 twitter: https://twitter.com/mkataoka_yogabu
