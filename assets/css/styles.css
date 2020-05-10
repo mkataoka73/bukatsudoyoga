@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* mixins */
 /* GLOBAL STYLES */
 html, body {
   /* font-size: 10px; */
@@ -431,16 +432,41 @@ p, li {
     margin-bottom: 0;
     text-align: center;
     text-transform: capitalize; }
-  .member-box .instructor::after {
-    color: #67a7b8;
-    content: "★";
-    font-size: 5px;
-    margin-left: 3px; }
+  .member-box .membership {
+    font-size: 0.5em;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: capitalize; }
   .member-box p, .member-box .member-copy {
     text-align: center;
     font-size: 8px; }
 
 /* individual member page */
+.hero .membership {
+  color: #fff;
+  width: 100%;
+  /*absoluteで位置を設定するときに、幅と高さは必ず必要*/
+  height: 1.5em;
+  text-align: center;
+  font-family: 'M Plus 1p', sans-serif;
+  text-transform: uppercase;
+  /*位置の設定 - 上下中央寄せ*/
+  position: relative;
+  margin: auto;
+  top: 50%;
+  bottom: 0;
+  font-size: 30px;
+  transform: translateY(-50%);
+  /* font-weight: bold; */
+  /* gradient */
+  /* background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  font-size: 0.5em;
+  transform: translateY(-2em);
+  left: -5px; }
+
 .text-member {
   width: 450px; }
   .text-member p {
@@ -809,6 +835,11 @@ p, li {
       object-position: 50% 30%; }
 
   /* INNDIVIDUAL MEMBER PAGE */
+  .hero .membership {
+    font-size: 0.5em;
+    transform: translateY(-3em);
+    left: -3px; }
+
   .text-member {
     width: 70%; }
 

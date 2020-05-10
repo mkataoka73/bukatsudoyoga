@@ -1,6 +1,7 @@
 ---
 layout: member
-name: Maki
+name: Maki Yasuda
+membership: Instructor
 image_path: /assets/images/maki/2-2.jpg
 instructor: 1
 number: 1

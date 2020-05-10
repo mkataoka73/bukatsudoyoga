@@ -4,16 +4,21 @@ layout: default
 <div class="container indv-page member-page">
   <div class="hero">
     <div class="bg" style="background-image: url( {{ page.image_path | relative_url }})"></div>
-    <h1>{{ page.name }}</h1>
+    <h1 class="title">{{ page.name }}</h1>
+    <h2 class="membership">{{ page.membership }}</h2>
   </div>
   <div class="text-area text-member">
     <div class="description">
-      <h2 class="heading">About</h2>
-      {{ page.content }}
+      <div class="about">
+        <h2 class="heading">About</h2>
+        {{ page.content }}
+      </div>
+
+      <div class="link">
+        <h2 class="heading">Links</h2>
+        {% include social-links.html %}
+      </div>
     </div>
-    <div class="link">
-      <h2 class="heading">Links</h2>
-      {% include social-links.html %}
-    </div>
+
   </div>
 </div>

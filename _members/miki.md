@@ -1,8 +1,8 @@
 ---
 layout: member
 name: Miki
+membership: Instructor
 image_path: /assets/images/miki/7.jpg
-instructor: 1
 number: 1
 instagram: https://www.instagram.com/mikiishihara27/
 ---

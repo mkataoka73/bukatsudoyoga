@@ -1,6 +1,7 @@
 ---
 layout: member
-name: Kanae
+name: Kanae Oba
+membership: Instructor
 image_path: /assets/images/kanae/2.jpg
 instructor: 1
 number: 1
